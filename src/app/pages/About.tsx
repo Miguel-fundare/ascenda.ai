@@ -5,10 +5,10 @@ export function About() {
   return (
     <div>
       {/* Hero */}
-      <section className="py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
+      <section className="py-16 sm:py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
           <SectionLabel>ABOUT ASCENDA</SectionLabel>
-          <h1 className="mb-6" style={{ fontSize: '48px', fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
+          <h1 className="mb-6 text-[32px] sm:text-[40px] md:text-[48px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
             The suit that amplifies what your team can do.
           </h1>
           <p style={{ fontSize: '19px', lineHeight: '1.6', color: 'var(--th-text-muted)', maxWidth: '680px' }}>
@@ -18,9 +18,9 @@ export function About() {
       </section>
 
       {/* Mission Block */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[760px] mx-auto px-8 text-center">
-          <p className="text-2xl italic mb-8" style={{ color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[760px] mx-auto px-4 sm:px-8 text-center">
+          <p className="text-xl sm:text-2xl italic mb-8" style={{ color: 'var(--th-text-heading)' }}>
             Ascenda exists to help companies operate like they belong in the AI era.
           </p>
           <p style={{ fontSize: '15px', color: 'var(--th-text-muted)', lineHeight: '1.7' }}>
@@ -30,10 +30,10 @@ export function About() {
       </section>
 
       {/* Before / After */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="p-8 rounded-[14px] border-l-4" style={{ backgroundColor: 'var(--th-card-dark)', borderColor: '#ff4444' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-6 sm:p-8 rounded-[14px] border-l-4" style={{ backgroundColor: 'var(--th-card-dark)', borderColor: '#ff4444' }}>
               <h3 className="mb-6" style={{ fontSize: '20px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
                 Before Ascenda
               </h3>
@@ -53,7 +53,7 @@ export function About() {
               </ul>
             </div>
 
-            <div className="p-8 rounded-[14px] border-l-4" style={{ backgroundColor: 'var(--th-card-dark)', borderColor: '#E85D2A' }}>
+            <div className="p-6 sm:p-8 rounded-[14px] border-l-4" style={{ backgroundColor: 'var(--th-card-dark)', borderColor: '#E85D2A' }}>
               <h3 className="mb-6" style={{ fontSize: '20px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
                 After Ascenda
               </h3>
@@ -77,12 +77,12 @@ export function About() {
       </section>
 
       {/* What Makes Ascenda Different */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             What makes Ascenda different
           </h2>
-          <div className="grid grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {[
               { label: 'Not a software company', description: 'No proprietary platform to sell you.' },
               { label: 'Not a rigid agency', description: 'Agile, practical, adapts to your reality.' },
@@ -104,12 +104,12 @@ export function About() {
       </section>
 
       {/* Brand Values */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             Our values
           </h2>
-          <div className="grid grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             {[
               { value: 'Innovative', description: 'Always seeking better ways to execute' },
               { value: 'Versatile', description: 'Adapts to every business reality' },
@@ -131,12 +131,12 @@ export function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             The team
           </h2>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Mike */}
             <Card variant="dark">
               <div className="flex items-start gap-4 mb-4">
@@ -201,9 +201,9 @@ export function About() {
       </section>
 
       {/* Why Us */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <div className="grid grid-cols-3 gap-8">
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               { title: 'We have built businesses', description: 'Not consultants who only work in presentations. Operators who know what it takes to make change stick.' },
               { title: 'We speak operator', description: 'We understand the pain points, the trade-offs, and the real-world constraints of running a business.' },

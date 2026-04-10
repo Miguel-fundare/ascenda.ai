@@ -24,9 +24,9 @@ export function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h1 className="mb-6" style={{ fontSize: '48px', fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
+      <section className="py-16 sm:py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h1 className="mb-6 text-[32px] sm:text-[40px] md:text-[48px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
             Start with a free discovery call.
           </h1>
           <p style={{ fontSize: '19px', lineHeight: '1.6', color: 'var(--th-text-muted)', maxWidth: '680px' }}>
@@ -36,9 +36,9 @@ export function Contact() {
       </section>
 
       {/* Two Column Layout */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <div className="grid grid-cols-2 gap-12">
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left - Contact Form */}
             <Card variant="featured" hoverable={false}>
               <h3 className="mb-2" style={{ fontSize: '22px', fontWeight: 600, color: 'var(--th-text-heading)' }}>

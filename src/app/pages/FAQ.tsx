@@ -18,9 +18,9 @@ export function FAQ() {
   return (
     <div>
       {/* Hero */}
-      <section className="py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[720px] mx-auto px-8 text-center">
-          <h1 className="mb-6" style={{ fontSize: '48px', fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
+      <section className="py-16 sm:py-24" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[720px] mx-auto px-4 sm:px-8 text-center">
+          <h1 className="mb-6 text-[32px] sm:text-[40px] md:text-[48px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)', lineHeight: '1.2' }}>
             Good questions.
           </h1>
           <p style={{ fontSize: '19px', lineHeight: '1.6', color: 'var(--th-text-muted)' }}>
@@ -30,8 +30,8 @@ export function FAQ() {
       </section>
 
       {/* FAQ Accordion */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[720px] mx-auto px-8">
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[720px] mx-auto px-4 sm:px-8">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
@@ -81,8 +81,8 @@ export function FAQ() {
       </section>
 
       {/* CTA Strip */}
-      <section className="py-20 border-t" style={{ backgroundColor: 'var(--th-bg-secondary)', borderColor: 'var(--th-border-dark)' }}>
-        <div className="max-w-[720px] mx-auto px-8 text-center">
+      <section className="py-16 sm:py-20 border-t" style={{ backgroundColor: 'var(--th-bg-secondary)', borderColor: 'var(--th-border-dark)' }}>
+        <div className="max-w-[720px] mx-auto px-4 sm:px-8 text-center">
           <h3 className="mb-6" style={{ fontSize: '28px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
             Still have questions? Let us talk.
           </h3>

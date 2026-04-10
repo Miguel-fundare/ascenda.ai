@@ -9,14 +9,14 @@ export function Home() {
     <div>
       {/* Hero Section */}
       <section className="min-h-[calc(100vh-72px)] flex items-center justify-center relative" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8 py-20 text-center">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8 py-16 sm:py-20 text-center">
           <div className="mb-8">
             <Logo size={150} withGlow animated />
           </div>
 
           <motion.h1
-            className="mb-6"
-            style={{ fontSize: '60px', fontWeight: 600, lineHeight: '1.1', letterSpacing: '-0.02em', color: 'var(--th-text-heading)' }}
+            className="mb-6 text-[40px] sm:text-[52px] md:text-[60px]"
+            style={{ fontWeight: 600, lineHeight: '1.1', letterSpacing: '-0.02em', color: 'var(--th-text-heading)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -47,7 +47,7 @@ export function Home() {
 
           {/* Stats Bar */}
           <motion.div
-            className="grid grid-cols-3 gap-12 pt-12 border-t max-w-[900px] mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-12 pt-12 border-t max-w-[900px] mx-auto"
             style={{ borderColor: 'var(--th-border-dark)' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -70,13 +70,13 @@ export function Home() {
       </section>
 
       {/* About / Mission Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-tertiary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-tertiary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
           <SectionLabel>WHAT ASCENDA IS</SectionLabel>
-          <h2 className="mb-6" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-on-light)' }}>
+          <h2 className="mb-6 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-on-light)' }}>
             The AI operating layer for growing businesses.
           </h2>
-          <p className="text-2xl italic mb-8" style={{ color: 'var(--th-text-dim-light)', maxWidth: '760px' }}>
+          <p className="text-xl sm:text-2xl italic mb-8" style={{ color: 'var(--th-text-dim-light)', maxWidth: '760px' }}>
             Help companies use AI to operate more efficiently and scale more intelligently.
           </p>
           <p className="mb-12" style={{ fontSize: '15px', color: 'var(--th-text-body-light)', lineHeight: '1.7', maxWidth: '720px' }}>
@@ -84,7 +84,7 @@ export function Home() {
           </p>
 
           {/* Value Pillars */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               { title: 'Faster execution', description: 'Workflows move at machine speed. Tasks that took hours happen in seconds.' },
               { title: 'Fewer errors', description: 'Human error disappears from repetitive processes. Same task, every time, perfectly.' },
@@ -105,14 +105,14 @@ export function Home() {
       </section>
 
       {/* Who it is for (ICP) Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
           <SectionLabel>WHO WE WORK WITH</SectionLabel>
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+          <h2 className="mb-10 sm:mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             Built for founders and operators who feel the drag.
           </h2>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 tag: 'PRIMARY FIT',
@@ -147,16 +147,16 @@ export function Home() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-4" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-4 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             Where manual work is slowing your business down
           </h2>
           <p className="mb-12" style={{ fontSize: '15px', color: 'var(--th-text-muted)' }}>
             Every manual task has a cost. Here's where it shows up most.
           </p>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               { title: 'Delayed Response', description: 'Leads and requests sit too long. Speed drops, opportunities fade.' },
               { title: 'Work Falling Through the Cracks', description: 'Follow-up depends on memory. Tasks get missed.' },
@@ -177,16 +177,16 @@ export function Home() {
       </section>
 
       {/* ROI / Math Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-4" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-4 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             The math is simple.
           </h2>
           <p className="mb-12" style={{ fontSize: '15px', color: 'var(--th-text-muted)' }}>
             Every manual task has a real cost. Automation replaces that cost with savings and speed.
           </p>
 
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h3 className="mb-4" style={{ fontSize: '24px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
                 Replace a manual task. Keep the result.
@@ -213,9 +213,9 @@ export function Home() {
                   <span style={{ fontSize: '16px', fontWeight: 500, color: '#ff4444' }}>-$583</span>
                 </div>
                 <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(232, 93, 42, 0.1)', border: '1px solid #E85D2A' }}>
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center gap-4">
                     <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--th-text-heading)' }}>Monthly savings after automation</span>
-                    <span style={{ fontSize: '24px', fontWeight: 600, color: '#E85D2A' }}>+$1,217</span>
+                    <span style={{ fontSize: '24px', fontWeight: 600, color: '#E85D2A', flexShrink: 0 }}>+$1,217</span>
                   </div>
                 </div>
                 <p className="text-xs italic mt-4" style={{ color: 'var(--th-text-dim-light)' }}>
@@ -229,7 +229,7 @@ export function Home() {
 
       {/* Software-agnostic Banner */}
       <section className="py-16 border-y" style={{ backgroundColor: 'var(--th-bg-primary)', borderColor: 'var(--th-border-dark)' }}>
-        <div className="max-w-[1000px] mx-auto px-8 grid grid-cols-2 gap-12">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <SectionLabel>OUR APPROACH</SectionLabel>
             <h3 style={{ fontSize: '24px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
@@ -245,16 +245,16 @@ export function Home() {
       </section>
 
       {/* Solutions / Services Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-tertiary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-4" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-on-light)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-tertiary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-4 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-on-light)' }}>
             How we create operational leverage
           </h2>
           <p className="mb-12" style={{ fontSize: '15px', color: 'var(--th-text-dim-light)' }}>
             Every engagement starts with a diagnostic — workflow review, opportunity assessment, efficiency audit.
           </p>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               { number: '01', title: 'AI Opportunity Audit', description: 'Assess workflows and bottlenecks. Identify high-ROI automation opportunities.' },
               { number: '02', title: 'Workflow Strategy and Design', description: 'Map systems and automations. Design the architecture before implementation.' },
@@ -278,13 +278,13 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             How Ascenda works
           </h2>
 
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {[
               { number: '1', title: 'Assess', description: 'Map workflows and identify automation opportunities' },
               { number: '2', title: 'Design', description: 'Plan architecture and integration strategy' },
@@ -292,8 +292,8 @@ export function Home() {
               { number: '4', title: 'Refine', description: 'Monitor, improve, and scale over time' },
             ].map((step, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center border-2" style={{ borderColor: '#E85D2A', color: '#E85D2A' }}>
-                  <span className="text-2xl font-semibold">{step.number}</span>
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full mx-auto mb-4 flex items-center justify-center border-2" style={{ borderColor: '#E85D2A', color: '#E85D2A' }}>
+                  <span className="text-xl sm:text-2xl font-semibold">{step.number}</span>
                 </div>
                 <h3 className="font-medium mb-2" style={{ fontSize: '16px', color: 'var(--th-text-heading)' }}>
                   {step.title}
@@ -308,13 +308,13 @@ export function Home() {
       </section>
 
       {/* Outcomes Section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
-          <h2 className="mb-12" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: 'var(--th-bg-primary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             What better systems make possible
           </h2>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               'Less manual work across the team',
               'Faster response and follow-through',
@@ -338,12 +338,12 @@ export function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 text-center" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
-        <div className="max-w-[1000px] mx-auto px-8">
+      <section className="py-20 sm:py-24 text-center" style={{ backgroundColor: 'var(--th-bg-secondary)' }}>
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
           <div className="mb-8 flex justify-center">
             <Logo size={80} withGlow />
           </div>
-          <h2 className="mb-6" style={{ fontSize: '40px', fontWeight: 600, color: 'var(--th-text-heading)' }}>
+          <h2 className="mb-6 text-[28px] sm:text-[36px] md:text-[40px]" style={{ fontWeight: 600, color: 'var(--th-text-heading)' }}>
             Ready to find out what you can automate?
           </h2>
           <p className="mb-10" style={{ fontSize: '15px', color: 'var(--th-text-muted)', maxWidth: '560px', margin: '0 auto 2.5rem' }}>
