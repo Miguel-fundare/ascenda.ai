@@ -49,6 +49,17 @@
   --th-toggle-border: rgba(0, 0, 0, 0.1);
   --th-toggle-color: #111111;
 }
+/* Rosa Hot accent override */
+[data-accent="rosa"] {
+  --brand-orange: #FF6EC7;
+  --border-hover: rgba(255, 110, 199, 0.3);
+  --primary: #FF6EC7;
+  --accent: #FF6EC7;
+  --ring: #FF6EC7;
+  --chart-1: #FF6EC7;
+  --sidebar-primary: #FF6EC7;
+  --sidebar-ring: #FF6EC7;
+}
 /* ──────────────────────────────────────────────────────────────────────── */
 
 :root {
@@ -60,6 +71,8 @@
   --background-section: #1A1A2E;
   --background-light: #F5F5F7;
   --brand-orange: #E85D2A;
+  --brand-rosa: #FF6EC7;
+  --accent: #E85D2A;
   --text-primary: #FFFFFF;
   --text-muted: #888888;
   --text-dim: #666666;
@@ -147,6 +160,14 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Logo glow layers — respond to accent color changes */
+.logo-glow-outer {
+  background: radial-gradient(circle, color-mix(in srgb, var(--brand-orange) 35%, transparent) 0%, transparent 70%);
+}
+.logo-glow-inner {
+  background: radial-gradient(circle, color-mix(in srgb, var(--brand-orange) 20%, transparent) 0%, transparent 60%);
 }
 
 @layer base {

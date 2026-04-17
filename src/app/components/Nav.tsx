@@ -29,7 +29,7 @@ export function Nav() {
       <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group" onClick={handleMobileLink}>
           <Logo size={32} />
-          <span className="text-[17px] font-normal transition-colors group-hover:opacity-80" style={{ color: '#E85D2A' }}>
+          <span className="text-[17px] font-normal transition-colors group-hover:opacity-80" style={{ color: 'var(--brand-orange)' }}>
             Ascenda
           </span>
         </Link>
@@ -40,9 +40,9 @@ export function Nav() {
             <Link
               key={link.path}
               to={link.path}
-              className="text-sm font-normal transition-colors hover:text-[#E85D2A]"
+              className="text-sm font-normal transition-colors hover:text-[var(--brand-orange)]"
               style={{
-                color: location.pathname === link.path ? '#E85D2A' : 'var(--th-nav-text)',
+                color: location.pathname === link.path ? 'var(--brand-orange)' : 'var(--th-nav-text)',
               }}
             >
               {link.name}
@@ -100,9 +100,9 @@ export function Nav() {
             <Link
               key={link.path}
               to={link.path}
-              className="text-sm font-normal py-2 transition-colors hover:text-[#E85D2A]"
+              className="text-sm font-normal py-2 transition-colors hover:text-[var(--brand-orange)]"
               style={{
-                color: location.pathname === link.path ? '#E85D2A' : 'var(--th-nav-text)',
+                color: location.pathname === link.path ? 'var(--brand-orange)' : 'var(--th-nav-text)',
               }}
               onClick={handleMobileLink}
             >

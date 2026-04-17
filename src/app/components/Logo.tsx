@@ -15,9 +15,8 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
       {withGlow && (
         <>
           <div
-            className="absolute inset-0 rounded-full"
+            className="absolute inset-0 rounded-full logo-glow-outer"
             style={{
-              background: 'radial-gradient(circle, rgba(232,93,42,0.35) 0%, transparent 70%)',
               width: size * 2.5,
               height: size * 2.5,
               left: '50%',
@@ -28,9 +27,8 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
             }}
           />
           <div
-            className="absolute inset-0 rounded-full"
+            className="absolute inset-0 rounded-full logo-glow-inner"
             style={{
-              background: 'radial-gradient(circle, rgba(232,93,42,0.2) 0%, transparent 60%)',
               width: size * 1.5,
               height: size * 1.5,
               left: '50%',
@@ -48,13 +46,15 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
         viewBox="0 0 140 140"
         className="relative z-10"
         style={{
+          color: 'var(--brand-orange)',
           filter: withGlow ? 'drop-shadow(0 0 12px rgba(232,93,42,0.8)) drop-shadow(0 0 30px rgba(232,93,42,0.5))' : 'none'
         }}
       >
-        <g transform="translate(70,70)" fill="none" stroke="#E85D2A" strokeWidth={strokeWidth} strokeLinecap="round">
+        <g transform="translate(70,70)" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round">
           {animated ? (
             <>
               <motion.ellipse
+                fill="none"
                 rx="48"
                 ry="32"
                 initial={{ strokeDasharray: 280, strokeDashoffset: 280, opacity: 0 }}
@@ -62,6 +62,7 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
                 transition={{ duration: 1.4, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
               />
               <motion.ellipse
+                fill="none"
                 rx="48"
                 ry="32"
                 transform="rotate(60)"
@@ -70,6 +71,7 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
                 transition={{ duration: 1.4, delay: 0.7, ease: [0.4, 0, 0.2, 1] }}
               />
               <motion.ellipse
+                fill="none"
                 rx="48"
                 ry="32"
                 transform="rotate(120)"
@@ -77,12 +79,22 @@ export function Logo({ size = 40, withGlow = false, className = '', animated = f
                 animate={{ strokeDashoffset: 0, opacity: 1 }}
                 transition={{ duration: 1.4, delay: 1.1, ease: [0.4, 0, 0.2, 1] }}
               />
+              <motion.circle
+                r="9"
+                fill="currentColor"
+                stroke="none"
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 1.7, ease: [0.4, 0, 0.2, 1] }}
+                style={{ transformOrigin: '0px 0px' }}
+              />
             </>
           ) : (
             <>
-              <ellipse rx="48" ry="32" />
-              <ellipse rx="48" ry="32" transform="rotate(60)" />
-              <ellipse rx="48" ry="32" transform="rotate(120)" />
+              <ellipse fill="none" rx="48" ry="32" />
+              <ellipse fill="none" rx="48" ry="32" transform="rotate(60)" />
+              <ellipse fill="none" rx="48" ry="32" transform="rotate(120)" />
+              <circle r="9" fill="currentColor" stroke="none" />
             </>
           )}
         </g>
