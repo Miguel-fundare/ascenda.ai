@@ -172,19 +172,6 @@ body.menu-open .mobile-menu{display:flex}
   font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
 .flowline .fl-arrow{color:var(--accent);font-weight:400;letter-spacing:0}
 
-/* ---------- shift ---------- */
-.oldrules{display:grid;gap:0;margin:44px 0;max-width:var(--narrative)}
-.oldrules div{
-  padding:20px 0 20px 30px;border-left:1px solid var(--line);position:relative;
-  color:var(--muted);font-size:16.5px;font-weight:300;
-}
-.oldrules div::before{
-  content:"";position:absolute;left:-3.5px;top:50%;transform:translateY(-50%);
-  width:6px;height:6px;border-radius:50%;background:var(--faint);transition:background .4s ease,box-shadow .4s ease;
-}
-.oldrules div.in::before{background:var(--accent);box-shadow:0 0 8px rgba(232,93,42,.7)}
-.shift-punch{margin:52px 0 22px}
-
 /* ---------- pains ---------- */
 .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:56px}
 .pain{
@@ -225,40 +212,6 @@ body.menu-open .mobile-menu{display:flex}
 .trio-col:hover li{color:var(--ink)}
 .trio-col:hover li::before{opacity:1}
 .trio-close{margin-top:58px}
-
-/* ---------- strategy ---------- */
-.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
-.stage{
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;
-  transition:border-color .3s ease,background .3s ease;
-}
-.stage:hover{border-color:rgba(232,93,42,.4);background:var(--card-hover)}
-.stage .s-tag{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
-.stage p{font-size:15.5px;color:var(--muted);line-height:1.65}
-
-/* ---------- deliverables ---------- */
-.deliv-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:52px;border-top:1px solid var(--line)}
-.deliv{
-  display:flex;gap:22px;padding:26px 26px 26px 6px;border-bottom:1px solid var(--line);
-  transition:background .25s ease;align-items:baseline;
-}
-.deliv:hover{background:var(--card)}
-.deliv .d-num{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.1em;min-width:26px}
-.deliv h3{font-size:16px;margin-bottom:5px;letter-spacing:-.01em}
-.deliv p{font-size:13.5px;color:var(--muted);line-height:1.6}
-
-/* ---------- method ---------- */
-.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
-.mstep{
-  border:1px solid var(--line);border-radius:var(--radius);padding:32px 26px;
-  background:var(--card);opacity:.35;transform:translateY(14px);
-  transition:opacity .7s ease,transform .7s ease,border-color .7s ease;
-}
-.mstep.on{opacity:1;transform:none;border-color:rgba(232,93,42,.38)}
-.mstep .m-num{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.16em;margin-bottom:14px}
-.mstep h3{font-size:17px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
-.mstep .m-line{font-size:14px;color:var(--ink);font-weight:400;margin-bottom:8px}
-.mstep p{font-size:13.5px;color:var(--muted);line-height:1.6}
 .quote{
   margin-top:70px;padding:40px 44px;border-left:2px solid var(--accent);
   background:linear-gradient(90deg,var(--accent-soft),transparent 60%);
@@ -266,102 +219,11 @@ body.menu-open .mobile-menu{display:flex}
 }
 .quote p{font-size:clamp(19px,2.2vw,25px);font-weight:300;line-height:1.5;letter-spacing:-.015em}
 .quote strong{font-weight:500;color:var(--accent)}
-
-/* ---------- bridge flow ---------- */
-.bigflow{display:flex;align-items:center;gap:0;margin:58px 0 26px;flex-wrap:wrap}
-.bigflow .bf{
-  font-size:clamp(13px,1.4vw,15px);font-weight:600;letter-spacing:.2em;text-transform:uppercase;
-  padding:16px 22px;border:1px solid var(--line);border-radius:12px;background:var(--card);
-  opacity:.35;transform:scale(.96);transition:all .6s ease;
-}
-.bigflow .bf.on{opacity:1;transform:none;border-color:rgba(232,93,42,.45);color:var(--ink);
-  box-shadow:0 0 18px rgba(232,93,42,.12)}
-.bigflow .bf-a{
-  flex:1;min-width:26px;height:1px;background:var(--line);position:relative;margin:0 4px;
-  overflow:hidden;
-}
-.bigflow .bf-a::after{
-  content:"";position:absolute;inset:0;background:var(--accent);transform:scaleX(0);
-  transform-origin:left;transition:transform .6s ease;
-}
-.bigflow .bf-a.on::after{transform:scaleX(1)}
-.bridge-caption{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:500}
-.bridge-caption b{color:var(--accent);font-weight:600}
-
-/* ---------- capacity ---------- */
-.manage-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px}
-.mg{
-  border:1px solid var(--line);border-radius:12px;padding:22px 20px;background:var(--card);
-  font-size:14px;font-weight:500;letter-spacing:.02em;display:flex;align-items:center;gap:12px;
-  transition:border-color .3s ease;
-}
-.mg:hover{border-color:rgba(232,93,42,.4)}
-.mg::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;
-  box-shadow:0 0 8px rgba(232,93,42,.7)}
 .cap-note{
   margin-top:44px;display:inline-flex;align-items:center;gap:14px;
   border:1px solid rgba(232,93,42,.35);border-radius:999px;padding:13px 26px;
   font-size:13px;letter-spacing:.06em;color:var(--ink);background:var(--accent-soft);
 }
-
-/* ---------- where ai works ---------- */
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:52px 0 30px}
-.tab{
-  background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--muted);
-  font-size:13px;font-weight:500;padding:11px 20px;transition:all .25s ease;letter-spacing:.02em;
-}
-.tab:hover{color:var(--ink);border-color:rgba(245,245,247,.3)}
-.tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.dept{
-  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
-  padding:38px 36px;animation:fadein .45s ease;
-}
-@keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-.dept-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px 26px;margin-top:8px}
-.dept-items span{
-  font-size:14.5px;color:var(--muted);padding:9px 0 9px 20px;position:relative;border-bottom:1px solid var(--line);
-}
-.dept-items span::before{
-  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
-  width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.7;
-}
-.works-note{margin-top:34px;font-size:13.5px;color:var(--faint)}
-
-/* ---------- autonomy ---------- */
-.ladder{display:grid;gap:12px;margin-top:56px}
-.lvl{
-  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
-  padding:26px 30px;display:grid;grid-template-columns:96px 1fr;gap:26px;align-items:center;
-  opacity:.3;transform:translateX(-14px);transition:all .7s ease;
-}
-.lvl.on{opacity:1;transform:none;border-color:rgba(232,93,42,.32)}
-.lvl .l-tag{
-  font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--accent);
-  border:1px solid rgba(232,93,42,.45);border-radius:8px;padding:10px 0;text-align:center;
-  background:var(--accent-soft);
-}
-.lvl h3{font-size:16px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px}
-.lvl .l-line{font-size:15px;color:var(--ink);font-weight:300;margin-bottom:8px}
-.lvl .l-ex{font-size:13px;color:var(--faint)}
-.lvl .l-bar{grid-column:1 / -1;height:3px;border-radius:3px;background:rgba(245,245,247,.07);overflow:hidden;margin-top:4px}
-.lvl .l-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),rgba(232,93,42,.4));
-  transition:width 1s cubic-bezier(.2,.6,.2,1) .2s;border-radius:3px}
-.lvl.on .l-bar i{width:var(--w)}
-.aut-close{margin-top:54px;max-width:var(--narrative)}
-.miniflow{
-  margin-top:64px;border:1px solid var(--line);border-radius:var(--radius);padding:34px 34px 30px;background:var(--bg-deep);
-}
-.miniflow .mf-title{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-bottom:24px}
-.mf-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.mf{
-  font-size:12px;font-weight:500;letter-spacing:.04em;color:var(--muted);
-  border:1px solid var(--line);border-radius:9px;padding:10px 14px;background:var(--card);
-}
-.mf.hl{color:var(--ink);border-color:rgba(232,93,42,.5);background:var(--accent-soft)}
-.mf-a{color:var(--accent);font-size:13px}
-.mf-branch{margin:12px 0 0 0;display:flex;gap:26px;flex-wrap:wrap}
-.mf-branch .mf-row{gap:10px}
-.mf-yn{font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--faint);min-width:26px}
 
 /* ---------- outcomes ---------- */
 .outcomes-list{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:52px 0 0;border-top:1px solid var(--line);max-width:940px}
@@ -378,16 +240,6 @@ body.menu-open .mobile-menu{display:flex}
 }
 .tagline-big em{font-style:normal;color:var(--accent);
   text-shadow:0 0 24px rgba(232,93,42,.45)}
-
-/* ---------- about ---------- */
-.pos-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
-.pos{border-top:2px solid var(--accent);padding:26px 4px 0}
-.pos h3{font-size:15px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-.pos p{font-size:14px;color:var(--muted);line-height:1.65}
-.mission{
-  margin-top:64px;font-size:clamp(18px,2vw,23px);font-weight:300;line-height:1.55;letter-spacing:-.01em;
-  max-width:820px;color:var(--ink);padding-left:28px;border-left:2px solid var(--accent);
-}
 
 /* ---------- contact ---------- */
 .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start;margin-top:24px}
@@ -426,14 +278,6 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
   display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   font-size:12.5px;color:var(--faint)}
 
-/* ---------- color toggle (easter egg) ---------- */
-.dot-toggle{
-  position:fixed;right:18px;bottom:18px;z-index:50;width:14px;height:14px;border-radius:50%;
-  background:var(--accent);border:0;opacity:.4;transition:opacity .3s ease,transform .3s ease;
-  box-shadow:0 0 10px rgba(232,93,42,.6);
-}
-.dot-toggle:hover{opacity:1;transform:scale(1.25)}
-
 /* ---------- responsive ---------- */
 @media (max-width:1020px){
   .method-grid{grid-template-columns:1fr 1fr}
@@ -447,29 +291,134 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
 @media (max-width:860px){
   .nav-links{display:none}
   .burger{display:block}
-  .deliv-grid{grid-template-columns:1fr}
   .outcomes-list{grid-template-columns:1fr}
 }
 @media (max-width:600px){
-  .method-grid{grid-template-columns:1fr}
-  .manage-grid{grid-template-columns:1fr}
   .f-row{grid-template-columns:1fr}
-  .lvl{grid-template-columns:1fr;gap:14px}
-  .lvl .l-tag{max-width:110px}
-  .bigflow{flex-direction:column;align-items:stretch}
-  .bigflow .bf{text-align:center}
-  .bigflow .bf-a{width:1px;height:22px;margin:0 auto}
-  .bigflow .bf-a::after{transform:scaleY(0);transform-origin:top}
-  .bigflow .bf-a.on::after{transform:scaleY(1)}
   .hero{padding-top:calc(var(--nav-h) + 34px)}
   .mark{width:104px;height:104px;margin-bottom:34px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
-  .reveal,.mstep,.lvl,.bigflow .bf{opacity:1!important;transform:none!important}
-  .lvl .l-bar i{width:var(--w)!important}
 }
+
+/* ================= V3 — OPTIMIZATION BRIEF ================= */
+
+/* sequential activation */
+.seq{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.seq.on{opacity:1;transform:none}
+
+/* ICP band (post-hero) */
+.icp-band{padding:64px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-deep)}
+.icp-band .container{text-align:center;max-width:880px}
+.icp-band h2{font-size:clamp(22px,3vw,30px);font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:12px}
+.icp-band p{font-size:15px;color:var(--muted);line-height:1.65;max-width:640px;margin:0 auto}
+
+/* statement (section 04) */
+.statement{max-width:820px}
+.statement .big{font-size:clamp(20px,2.6vw,27px);line-height:1.5;color:var(--ink);font-weight:400}
+.statement .big strong{font-weight:600}
+.statement .pos-line{margin-top:22px;font-size:15px;color:var(--muted)}
+.statement .pos-line b{color:var(--accent);font-weight:500}
+
+/* model progression */
+.model-flow{display:flex;gap:14px;align-items:stretch;margin-top:52px}
+.model-card{flex:1;border:1px solid var(--line);border-radius:14px;padding:30px 28px;background:rgba(255,255,255,.012);display:flex;flex-direction:column;transition:border-color .25s ease,transform .25s ease}
+.model-card:hover{border-color:rgba(232,93,42,.4);transform:translateY(-3px)}
+.model-card .mc-num{font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:14px}
+.model-card h3{font-size:19px;font-weight:600;color:var(--ink);margin-bottom:10px}
+.model-card .mc-body{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:18px}
+.model-card ul{list-style:none;margin-top:auto}
+.model-card li{font-size:13.5px;color:var(--muted);padding:8px 0 8px 18px;position:relative;border-top:1px solid var(--line)}
+.model-card li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.85}
+.model-card .mc-out{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.model-card .mc-out b{color:var(--ink);font-weight:600}
+.model-card .mc-quote{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink);font-weight:500}
+.model-arrow{align-self:center;color:var(--accent);font-size:22px;flex:0 0 auto;opacity:.9}
+
+/* five-year triptych */
+.fy-flow{display:flex;gap:14px;align-items:stretch;margin-top:52px}
+.fy-col{flex:1;border:1px solid var(--line);border-radius:14px;padding:28px 26px;background:rgba(255,255,255,.012)}
+.fy-col .fy-tag{font-size:11.5px;letter-spacing:.18em;color:var(--muted);font-weight:500;text-transform:uppercase;margin-bottom:18px}
+.fy-col ul{list-style:none}
+.fy-col li{font-size:13.5px;color:var(--muted);padding:8px 0 8px 18px;position:relative;border-top:1px solid var(--line)}
+.fy-col li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.7}
+.fy-col.hl{border-color:rgba(232,93,42,.45);background:radial-gradient(340px 240px at 50% 0%,rgba(232,93,42,.07),transparent 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.fy-col.hl img{width:52px;height:52px;margin-bottom:16px;filter:drop-shadow(0 0 10px rgba(232,93,42,.75)) drop-shadow(0 0 22px rgba(232,93,42,.4))}
+.fy-col.hl .fy-tag{color:var(--accent)}
+.fy-col.hl p{font-size:14.5px;color:var(--ink);font-weight:500;line-height:1.5}
+.fy-arrow{align-self:center;color:var(--accent);font-size:22px;flex:0 0 auto;opacity:.9}
+.fy-close{margin-top:44px;font-size:clamp(17px,2.2vw,21px);color:var(--ink);max-width:760px;line-height:1.55}
+.fy-note{margin-top:14px;font-size:13.5px;color:var(--muted)}
+
+/* architecture diagram */
+.arch{display:flex;gap:12px;align-items:stretch;margin-top:52px}
+.arch-col{flex:1;border:1px solid var(--line);border-radius:14px;padding:22px 18px;background:rgba(255,255,255,.012)}
+.arch-col .a-tag{font-size:11px;letter-spacing:.16em;color:var(--muted);font-weight:500;text-transform:uppercase;margin-bottom:16px;line-height:1.5}
+.arch-col.hl{border-color:rgba(232,93,42,.45);background:radial-gradient(300px 240px at 50% 0%,rgba(232,93,42,.07),transparent 70%)}
+.arch-col.hl .a-tag{color:var(--accent)}
+.a-items{display:flex;flex-direction:column;gap:8px}
+.a-items span{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:rgba(255,255,255,.01)}
+.arch-col.hl .a-items span{color:var(--ink);border-color:rgba(232,93,42,.28)}
+.arch-a{align-self:center;color:var(--accent);font-size:20px;flex:0 0 auto;opacity:.9}
+
+/* governance rows */
+.gov{margin-top:52px;display:flex;flex-direction:column;gap:14px}
+.gov-row{display:grid;grid-template-columns:190px 1fr 1.4fr;gap:26px;align-items:start;border:1px solid var(--line);border-radius:14px;padding:24px 28px;background:rgba(255,255,255,.012);transition:border-color .25s ease}
+.gov-row:hover{border-color:rgba(232,93,42,.35)}
+.gov-row .g-tag{display:inline-block;font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:600;border:1px solid rgba(232,93,42,.45);border-radius:8px;padding:8px 14px;text-transform:uppercase;white-space:nowrap}
+.gov-row .g-use{font-size:14.5px;color:var(--ink);font-weight:500;line-height:1.5;padding-top:6px}
+.gov-row .g-ex{font-size:13.5px;color:var(--muted);line-height:1.7;padding-top:7px}
+.gov-close{margin-top:36px;font-size:clamp(17px,2.2vw,21px);color:var(--ink)}
+.gov-close .q{color:var(--accent)}
+
+/* proof chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;max-width:820px}
+.chip{font-size:13.5px;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:9px 18px;transition:color .25s ease,border-color .25s ease}
+.chip:hover{color:var(--ink);border-color:rgba(232,93,42,.45)}
+.proof-note{margin-top:32px;font-size:13.5px;color:var(--muted);max-width:640px;line-height:1.7}
+
+/* comparison */
+.cmp{margin-top:52px;display:flex;flex-direction:column;gap:12px;max-width:900px}
+.cmp-row{display:grid;grid-template-columns:280px 1fr;gap:26px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:22px 28px;background:rgba(255,255,255,.012)}
+.cmp-row .c-model{font-size:14px;color:var(--muted);font-weight:500}
+.cmp-row .c-q{font-size:15.5px;color:var(--muted);font-style:italic}
+.cmp-row.hl{border-color:rgba(232,93,42,.5);background:radial-gradient(420px 200px at 20% 50%,rgba(232,93,42,.06),transparent 70%)}
+.cmp-row.hl .c-model{color:var(--ink);font-weight:600}
+.cmp-row.hl .c-q{color:var(--ink);font-style:normal;font-weight:500}
+
+/* fit */
+.qualify{margin-top:44px;border-left:2px solid var(--accent);padding:16px 22px;background:rgba(232,93,42,.05);border-radius:0 12px 12px 0;max-width:760px}
+.qualify p{font-size:14px;color:var(--ink);line-height:1.65}
+
+/* case-study framework (hidden until SHOW_CASES) */
+#cases{display:none}
+#cases.show{display:block}
+
+/* form: thank-you state */
+.thanks{display:none;text-align:center;padding:34px 8px}
+.thanks h3{font-size:24px;font-weight:600;color:var(--ink);margin-bottom:12px}
+.thanks p{font-size:14.5px;color:var(--muted);line-height:1.7;max-width:420px;margin:0 auto 26px}
+.form-card.done .f-body{display:none}
+.form-card.done .thanks{display:block}
+
+@media (max-width:1020px){
+  .gov-row{grid-template-columns:160px 1fr;grid-template-rows:auto auto}
+  .gov-row .g-ex{grid-column:1 / -1;padding-top:0}
+}
+@media (max-width:860px){
+  .model-flow,.fy-flow,.arch{flex-direction:column}
+  .model-arrow,.fy-arrow,.arch-a{transform:rotate(90deg);align-self:center;margin:-2px 0}
+  .cmp-row{grid-template-columns:1fr;gap:8px}
+  .gov-row{grid-template-columns:1fr;padding:22px}
+  .gov-row .g-tag{justify-self:start}
+}
+
+/* ================= V4 — LAUNCH CORRECTIONS ================= */
+.btn:focus-visible,.nav-links a:focus-visible,.foot-links a:focus-visible,.mobile-menu a:focus-visible,.lang button:focus-visible,.burger:focus-visible,.brand:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn[disabled]{opacity:.6;cursor:default;pointer-events:none}
 </style>
 </head>
 <body>
@@ -481,33 +430,33 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
       <span>Ascenda</span>
     </a>
     <div class="nav-links">
-      <a href="#strategy" data-i="nav_strategy">Strategy</a>
-      <a href="#ai-capacity" data-i="nav_capacity">AI Capacity</a>
-      <a href="#where-ai-works" data-i="nav_works">Where AI Works</a>
-      <a href="#about" data-i="nav_about">About</a>
+      <a href="#model" data-i="nav_model">The Model</a>
+      <a href="#capacity" data-i="nav_capacity">AI Capacity</a>
+      <a href="#governance" data-i="nav_gov">Governance</a>
+      <a href="#why" data-i="nav_why">Why Ascenda</a>
       <div class="lang" role="group" aria-label="Language">
-        <button id="lang-en" onclick="setLang('en')">EN</button>
-        <button id="lang-es" onclick="setLang('es')">ES</button>
+        <button id="lang-en" onclick="goLang('en')" aria-label="English">EN</button>
+        <button id="lang-es" onclick="goLang('es')" aria-label="Español">ES</button>
       </div>
-      <a href="#contact" class="btn btn-primary nav-cta" data-i="nav_cta">Build Your AI Strategy</a>
+      <a href="#contact" class="btn btn-primary nav-cta" data-i="nav_cta">Design Your AI Operating Model</a>
     </div>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
   </div>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#strategy" data-i="nav_strategy">Strategy</a>
-  <a href="#ai-capacity" data-i="nav_capacity">AI Capacity</a>
-  <a href="#where-ai-works" data-i="nav_works">Where AI Works</a>
-  <a href="#about" data-i="nav_about">About</a>
+  <a href="#model" data-i="nav_model">The Model</a>
+  <a href="#capacity" data-i="nav_capacity">AI Capacity</a>
+  <a href="#governance" data-i="nav_gov">Governance</a>
+  <a href="#why" data-i="nav_why">Why Ascenda</a>
   <div class="lang" style="margin-top:18px;align-self:flex-start">
-    <button id="m-lang-en" onclick="setLang('en')">EN</button>
-    <button id="m-lang-es" onclick="setLang('es')">ES</button>
+    <button id="m-lang-en" onclick="goLang('en')" aria-label="English">EN</button>
+    <button id="m-lang-es" onclick="goLang('es')" aria-label="Español">ES</button>
   </div>
-  <a href="#contact" class="btn btn-primary" data-i="nav_cta">Build Your AI Strategy</a>
+  <a href="#contact" class="btn btn-primary" data-i="nav_cta">Design Your AI Operating Model</a>
 </div>
 
-<!-- 1 · HERO -->
+<!-- 01 · HERO -->
 <header class="hero" id="top">
   <div class="container">
     <div class="mark reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoCAMAAABNO5HnAAADAFBMVEUAAADnXCnrWSvwZS3nWyn/AAD0Vg39fgHnXCn+PDznXCnXWCvWaSjbXRznXCn//wD+VVT4ezjnXCnnXCnoYSnyYSvwSirZSCXvZhD+PgHmSxj/f3+uVgXUfiv/AH/NZgN/fwDONDS/Pz/aPBe/PwLSSxe+fz7/qlW/fwF/AAD/qgD/AP/eWynoYCqqVVXXexv8bEj/AFX/lzDabUj///8A/wC2bSTNmDG2SCSwVzCqqgD/SEjaSEj/Kip/AH/wYCuqAADUKirUVVX//39/f3/MZmbxYCv3e0+qqlX/AD/nXx9VVQCZZgCZZjOyTBm2bQDfXx/yYyvxYCz/mQD/vz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWQngGAAABAHRSTlMA+hINLAEGAtIETgsICG8BAwWvjyr9CggJBAoCBAYCBQIFBAcECwQDBAIDASVJAwgHAwUHAQEHBQcGAwcHBgLIAwYGAgIFtgcDBCADBQUKByBplgUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADfpmWgAAUUpJREFUeNrtvQdj27qyNQrPoJAEIJISRaq7p5e99+nt9nu/8nr5/7/lzYCyY4KUY0lx7OQZOTsnTmyKXBwMpq4R4mW9rJf1sl7Wy3pZL+tlvayX9bJe1st6WS/rZb2sl/WyXtbLelkv62W9rJf1sl7Wy3pZL+tlvayX9bJe1sv6Fuv9O6sBtFEb+vVevX/Pv6kv/67MRusvX9HK1c26/du8c0nVXe1fGfqI9p9zvoBW5s4F/v+wllAi0C+TmlQXuij4N30X6PSzMdsvckMrN/OU1pz+NAy0Se+uefgrXOkSl1ug6RscfaQ2PzGuJESMSl42AOn/+k4xkrpMy64QFmvE0+XmBmqrtlJaFIx5+2fGfLnZiLtyudksl2aZ6ruLPzEv0HvE4vb7lH43T81PCXReMDj/Xi6XRb7MC42IC0C7Gn4dLOS+WW4ltEihaejNYJqaL7CqvEixsd4ub/6moB/y6CPNkW8K+kbgH1/mN7JvwvoZgV752lp0hC8W9IuApkeHcsezzsFpEnRSDrTRCywtWNSegb777lKk70J0N68yxVLrmY2uVTT0c1vxTl+n7ZsiSWd1n+f5zwa0tqX34LzDlLBOGyxrdL9hWgxC/RbsmzeEhTD6TdOUFlmlOpfqzvml01L7Ba6WDFhuGEkS0/iIe00vaKv01Rwh/LNpD1hjfj49ra91A4jnZq5JvtJ2W+f059/O0yJeKijz8GP4GSzAbEZvaYuhye/YF+8Q6AV6t07T2x/KbWeRNjFfjtb2VW2vbuaofj7V4dL2bCKh0+mtgUCnFAl5Cp11x56b4zXoes5b/UZjl++7x+t8sdDuPL2FLF10Fm2F9I6+uYvszwi0Ot/uaQZZOZJKo0onHGlpl7r4u1GAKJZv0DkldCuErVQqoCPUnb26Ve6a/oHkFJXB1w7SpQIRGXsl4Joud7PeIOZC/8RAb5GhJyNsAMOfHUmvbIUY767t3zo63MrWpijU7QuzaOFvzZcLr9vrYhOuI4N90f5qf+PfAQy+Yn39SugFfWpe/LxA57eGND89yXLdAiP/T5RSdExfXVyJTNJCuTgtOpc5wzXh6HJ0G5b08sZr1OReykrKzBrdUfeuCBdqXyagmtuaXuB2D/FO+FmBRqPAt08dxBnJQIMxnHRXAlDzN1T0HST4a/ozGhRshfCPeYsrOgnrhUrpWzRqug69LQIygXHSu5YW9In0Fvi1tpDD/EaP5T+r6iBdCpWVFYJkp2VyEuNyd43pdcgsIGOv6YxEN1vTuVn+QtL8tq7DhqDFGCJMssnwVZIEkjFdy1aZZLEnicbPuL2bnw/oYAObAgwLVxDp7F6Qb2E6GUHGkg0VWXGgNFrxD21AhD1ByEmRTehS911rugV8wq+NoQb/00Y6Vn6dGlOSONNGFx9kdrLPyghNYCf8Gl3xXv/iHClqhzAic6LKpg+/UJKxhgGOKJmfRT1vDd/VTL/iSJAxxaugmqtKVsnJvisbZ3zWpSgtsKJWrDBkkiX7wBzWiA9H8jX1jedizMXWbc9/RDEvtm6HBrSWkRasUUeZPDlmEUjQ2iMyuasW9lj8A1mWQQoNm/TCcODFBqkgQfjxxDx17cnu0Z7+gW1YQQaEGE+nRwE9TRhpDeOTk+So6xDW9VwysIUozd/BmjOS7cb+eEBvyjXdvaHnAHeKsHqnhcyyo9DZmiKZzMYnR1+IoJYXUpJ/boB2HZ0edzz/HyoA/ZqsN1uSNy1KMufkZEIoT0+e0Zom2YRUGegGbHAfmx/0MGQrwRn2BKUs6Mx6VijfgE0Wn/T4v2iOxJY/qNlxFsL1pdOkm2H8HGGm9c+VkBXd4CsHMyx/xHxtHnLPv3pOgUwmzxVn0h+TscQQsTber05/PKA3aS6MCN7z5JCj6vGg7X09Jh9qJcjWm9n6xxPpciaEc3TKiPGQX939cjKK1uRG3h6OX3sI9K40SoY+Mf58TSZHKZR2P57HUqxzPgfFEM53bLXRKBtlmaygdURuVkV/SSBlD5fSCX0/+SGyt9q/n9z/ypKFhMKQ9vgBz8KaPC4pJuMdoSL6j5EkTNsw/91gfYjfS3DkSY4epHeS0SQLnsw54gKdpV9Q1jcXRA5WZ/dfKkG6CWHPfjiYzYofTkx2Q0PSlwWPGrEo0k6l0pXAvLD6A9JbeFiMb0LOEL2cWZvxItFU+SbUPBUp1uyQ0IuraO/s3F7T8Rn9vP0BrWhL8mh2PFcCJMoVB5EB/7Hadf4YAqfIkgep6SQZAdTDCvb1Wrw1ZNRr4NB1ZsfDl0zGGUj34yFNfqEeD0JieZfDWtMBpIVbN5/pGEpdZ82VIGmUQjw0BJVMRyvaIL7mqFCbDzvdXutKK1eGYCIncxwieSjjIaiThrXHj5ZOMeSqDMpzm1NyncwGcjUiFxKh92R4a8PiB5XWe4T6khNS6KRoS2G0cwvApgi1SWkJvlPfdEpIy/Ug0mMrnV89dwuPtCyXbKAu1KmfzRYD8kxggAzpFduT/+AysCsZMuScaoV9A0fJyUiCODMipXNQbw0IHeHm/8ZFJFk6qEDGfCSG15I77Z9pkIlAvprP00KYNXJ10Xgw5s5q2TuMwwo6VImaAmBWNusV6Xchkp36OLknqk+KX6Ep/C5D7Z8gWCJk9rH+mPaylBngX5dLsQHQzzaap91igVwaQ2ZdNoDPJNhyZVnmRT8nOgfv32iSdFjoSgqS/JMdR1YmYbQL60RWpIjr08+kvt7adCBd9Yb01rpN62YDr2ysSRhInxe0J8zzBZoego95Ug+TwRSStOCK4R+2C3ANZzx+QcJZnvQzBFOGWX4IORacJONhP71ig5FUU2nnNc56WCkNzsxOuZqVDgsh+0hDOBKdhefrvOR0+55zVoRDH+cqq6SD1a78PvssjtSHZQAGEwRjkmYuVPAzUYMlX2iHkS5J0TqR/weZ1XU5FLzlvAoBTXdLBl0ykFgALF6v22qq57ksmU/v6BnUJBK28XiCnBLVcLFTxZdkECoGfEDMwjW45gggf1eKt1gGd2iHmZ6NainKuiGpnPWA5kTKv58LbupgL2YA6Uk4EYvNMy75UG9mjUMoe6I2EXwKrm6FZCjua9x/K43FpRwN4vzPGZ+kdIFzrkh9y5ZLZYcjGNNE/kXCTGN52lezF3B5wWVT/J9TIG0P6f8i1dQehGX6HE29kL9XJDGyj/OEdjy5EDeFyWroQFfz2pATI3cER1g3vwsXUFqUpQDjPTZyWFMnkjVtyO+UeWzjO7ypSxfGk5qTyTR6Tw1pb/qg14DP0PDIQa9YLKHvzU1I6Rn9ytzI8eb14IloViCNHcR5TAaLxfY9vdLlr9sLNWSmTQZjRcko44I8sVJwj+2QK9od0vZOhH8GzgqJ39qz/ZmtZVsTgf04P1vP5Z0uvwK8jl1dQmMerI3xYCyVrBWpSUAVCeS/2tNivrxCY4TmON8ON30stbQl7E6ZKLUpyY9U76Uc9XVPcMblcwRawcy8EwOKY8Jn2E0zQxtv8Iump3dIOOlnh5IEk6xZkjzP7GVtyR4wQfeU5JhckYFzaiHbIdT0CiSsfbHr8OVqJdoln2vZOxamGcozDc+zAiFFE8K/0yGcv3iPej4n9y96gMKzaA753NNkVMmqST+h5/DyYoubIq8EULnCWPZt5FChB+kbtribfow5z4ui5No9NoLUBf38qHskTjPBFcWrZ1mfB+Su1LLnedNTaHEhLrbb1RjV7w3OS0vG83g8XJVY8TYuucZRL+Cm8Qc5qtJ2ClpPr2J8suNMlHjVB5lMSecg5Z6ltBBXnHroOImcss3kMw3lGfELkDfRFWiZSVvTTsf7rP+8gA8oYFCcGeeChAvsHMXbnDvigv+uzkLbjxZndOUc6XOG1Qdtp67uKMrQveEdhsP5E1dzKAMysvKmZE3Onh3Gvy9CJzA5W1EkaErPaYR5tXSL3Sf/0rFBMRQiDlkT5PLIBt22Z0ClSHr6tqUFtP4d/9+APbxV1KDN3ZQrBzG899aVwWukbcgyUICLE8ZJ9nxcw7Q10zTUIahAajaJDY4K1iF2ehPSP+fAc2roWdekYA1H4tn5HoIZQham5vq9UsGyVT0XDi7pB2/VD52suCwvSafIajQQMUwSVuEB09M1boL1rObn58h9dxz9XmjNpvYaMogiK0k1a9NiFsQ61U+prz2GuDJrvLfBGooelDY+HexBBOfb9so2GJ+m88a7dG4UYD2TSgwIo5ehY4LbNduGlyo0b932cbUdXUh/TZqgJMQAstmQqsatS2nwTtDQmBQtXbvMPeIi5YeQ0DM91vSPKP6CuMYnLVxPEfjWrwBndLTz83QO/xFLpBY3PYLddcZFnEr8ipeyGILnYxVSt23nFqysG+O4TEteLT8EpGMYJ6sV3rRdVfSniyH7MMnuK2Bcks/6LkS1PvaVB0kykE706/mTGiDpImSJNAfb6UajVFzCnsp8189+4jrZUyVy2QzhzOUeyA4JR+knu1tU6B+StpsQtMzohwa+Makz2jgtqv3ohSpJ/wflHZvT9IJQL2i7bpTW+kmB1toFmeAUIIgxRtFK8hfccDIm9Phx1qjEnRU2CedSHpYE/8p3JsmNz1TqvimhtrEj3jxJbLSwF+6t0E/b8zK/xobNDbYCTJy84oPQpgOeL4tHStaD+417tBR8g+L0k6+UfSWwTXCXWtcw1x1LXpX/Gr50yAGm7nlMP6aVecVbYf6EQGt/XWLeBsIwsjjIo6tQ3AbeFatVPD9Pwz6ng5D5YFbYs18faRHSIRL3Vw6vLhY2UHhso7WbxjPHDf1Bk7af9kQ6WKbL+ZPqDtDkGf8L3TD5FBFiI7g5gZSeX5nZzC+u3cwWSCdaYQ3UTHcC361uOglKoARPDqxvZqjJO6zTIj0jb94v9D9UGYzqMnoKmWGbPFieP2Vs2qReN1CLpT6LTWg6SCz+GnC+1Nea6aI0mUlaecVGiLPcFIs4/m6F0AlhhpWHWq1y4ZSezWbwXlyDIUOc9MNWJkh5TGPlwZ6NOl81TwY08xWh1+S0qPdQdc+0hBNvbSffKRm4aOnce2Wa90WNolArsukkuCz7fji398Qm9cWlyEu3Li3dtzjX6aIMDZ5toA4x6/vw7CGSf/NkSXFOkxhcWI4VRPnkcZZ9sG3iau6xBphxAe8/8Q2Lmr6oRAPfvd0i4d5yAZaElDQeFG1/ekPeTgh+cDhdkdPTNzxYldsnBDqYFH91sCb7rpu3nk7oAEcf9lrqAUv3OujqU34SyXBnZPJ+V3G+EYCRDN1LJAXnn9hNedv4xpvTWe18qvhIjBP4kxD9V831kwFtdBmsif98J0rZzYyQQJMQb5kanCnLf+cAqcAZyJn4K5fhfynR/95rMhplE66zlBfgkLsgN3yjr9PSpmku1Kz7KNMkq4wzqtFPBrQuXRBTujkhO4XQLNA3ONOBWZ4uQ0iTozs2m4y+R6PKfc0B9LGjxJIpV5VQGq5mYqWhUhvY3gC61BZj2py10RafjCZPw7q1oHOFkWZLKon5LdlUSD7NEbzQIjt5JmsyEo6rv2B5x80t2q7I6FgHeCuUs7OLp/K/28MuB1xW3cr+ZEQ2UcjU0m8rcrTJFWRWjclkcoQgfnOoJ+MRB8LoMHTi0wYU2faspesqyiGMmDRAk/09fyqgg1O7IsWL3aNwTJvSvFoZUZ6JcoG/kM5o5H8d06A8Hu1ek45S2OPVTU+ScbLFeqYtGUStzEoxitxDNkjI8n+i1Jau2w8G+yFqVSGgjchtI/RbEhPNSUOZnCR7lzuPQj8VGyihZQuwy44HXLxP/9J+Cze6HWCXJ+OMk+V4Jrj07+901Y27qzuSADSGbNzpk9nRIczhyWAbdbUa9/wqDB0N5JrTbw+Owt1aBm0rG9xEQNu2LabMbezp7PT01DaNxYb/zbeoV1J+bDHfSz+xAEhHujpFVg81k8C5UVzPppWa4eLqiYBetQXEf4DImxrTZqQzUl+g4YJyZo7ax9C96RYEDkcXerXSK8aYfHjDnI8tbXRuTJEqPRdzWNk5kOEYmIACzZLcF+2krSDjxKQHezbDqIxnAmRylM49XbBDsxdrewItuf6Wo44gT/MHiPK2tzULrZ2yqoJa0G6xvnX23xDKRTpkX/lbolGRk69PvgchbWWL9rjVVw+4gwQFQV1zNwI5i/NIFZIRNdNPWZeuOdapYRQLtHU509YVejDpejKY7g79sjZogRVJ1pa+VBldI1rOtNStwN5V0UwrOAPc8rpaf0Y+kYa51hpuqNoIbrQPedncKYRtywf0vEMIhYVPGL3j1IoWEdAteyCS8h4/SEmG2o0Kw/6/W8GkPPcM68bDlvaS20q09m13m9eksRf0N2jzL++9QH8bK2eGKmgJHvFB73vsJWiua4p0RzKunrauVDmP5Ry6Ek3OCsdt6BnHD7QtQgoW1wN9Leb8c9tjjGUZCDCZ4v+GzZx+bTn/0zT985//HIipMarUIeQ5uUDm54M49phFzzdn7OlOu5sU8JUozdMhvSTB6XqFE7a4xCibPNCo5Qyutf18V2Bw087NOSdy/zH0bs2rLDhDXvSaKdgAxtFEPux+JhBKo0DcDS1OJ5LvsH6i0iUQeSku6Z5Gd2MwQlpbyAce+qGEEb4kFlWumNScFIaGND1QgLTu5gS5Gqltdnsg1CEnMY5CeOyzLJ7G7gCllqrEqAFrNOrXG9/TwV1V8nwrw0ohWQ2Lm4MO77LSdwcknNFSatcgFdLbZWkx1bffEs5GeKApT+JLQHd9MNqmpPvfP00Vr2KVtbI++zrxya5HGl1m1TYPM5/PU/Beh4O0xsvL5q5G3I5WabmlXTgOuX4p1Gn10E7r2jm35m9OmZH+E2G/ZkP5ofY8Qd0t4+VYKbkGs6dxwudAFvyqJut3ehDMwXKWIDYqB5iTvuByWud4OgW6zWaT56SlV6tV8WmplncYoVNoaloNXNAXOR+KPG0oD6OCWhHeDmpZhp9Ka1RvC1EyhfLhCfcJ6Te61JMAnSIzYc7k+MF6oncO5vJqq0PTTiryRtk2MzJgyEqLdqzaFMXmzkCW+Qzp1w2pekfC87wIJApc4DPU6vZgGSevgGuxvqeSvtF82oEwG/nHhzEQJJNeqxq5kFbkJHqIfrCnb1mw56LrLzHjL/h1rMAOB3p0qeXKXWqjg3XcD4fvcUJ+oldGt/OlYlg9aqWHWqZcfBJ0NDi7lDZ7EMwjMerhDPDLeWkHqpm64n00GZ1BD2Jpz0H2tt84vP6vE6YmWWEKjqYsbjaf0g0+pl2tirRsgRZra8lGfUjSZEJGXC/MQ/7gr8uSSUEf3YEl5bFZOsFR1SjzPhGjySgZJV8/Huk0rHFRNrfDc/S/PuaAAGUK5jAJn5BrLkG/X0cnnMngdnuXDTiEuBCF0/DYvcAKNSeSVw4yG/lRYw6yjL5exzOWcKoAG3NbVfq4BabKhCry9qUqYcoa7P0uYGDvqqp4007Hgbu/FDlqeHTPNg1AqwaZwPquTCcnoelLZl+V6TEZ1+LitlmS1oBh+c1WvsX55hNWHLMZ37fjODfCVfkii7JD9Hw2VHsU9sv4u0cEOjSBcEQvJi4biYx5J7gCYnqfyY/y1vbJCYPiMbfh1m24c/CSB7WT+j0h1UzCYvnpnJzePeATkBWThIUQPrkV3wHotj+xtDJyrjmXZaG0nBGTu40Qbjyc3cLAI+weEWiVxkALXe02TScfQ2+EsYii6hUcsoZur5MeHNR4ONBe+22wycsq9hCTzHpy+pA0iLwvyIi3QIMvHxdodmkLni9YrsuCue2klDtzUpJn0XhlNWTjLn9AEkog3epLEOjRgeauoPbPtt/8+fGPUOanHL7G0S6hJrtje2hzpfJ3kGgOCZeelZ4vfa9C/k5NmAS/cGRpcrVd31MB3NwNtz26E4u3QLMvHjU00zkS5D01dFruIjHl8O+yCBkFl6aPOpFIMczMTQVzzbyfNpPFLmYBDubr8zV4MUA/wE3HHWfvkYE2dLjgDTTMKBKHTLmG2Jg1inOmD+OSsIGDJyPjiRPymi6Qm0e+4fZmT5mPKFRaDBPAjHlCk7e+hBChlEmvTPl7hsGKNBDy3QxraoA8xDxuAwlteuDJhLOQSTVosnJ1tWXqQrt13R57I3q7JItNw2AmLgm1225NplRNb8bLXpcnU/a0+1h9l0Yn51uzZov17wpTYxXLdFbJ2RnPHBKfuESkGA09GR2WHCqnrR0clvSxHQDtQvfJICPJWDCbgYFLdUbSscGGTGjZNUhllX4Ktd3qu8yXMR58az/q1DJLu+LO706X7DQoD7rfs5Da5RyjmPSDjfQX2QdmQDRtGa2/fmxrqeQKCCZo7d8L65MrPjDM5/of3ARFr2MalTFxlxPbLPW1Xjx+ysIAtqULKoVrjoe1XetZ76zzRvzBogHleDaz7Lc/TpOTX7LAFNl6a2X5iHfP1pq+yp0cNOy4D8G+F6H3MbD5pOSx9AwOur1Pb/nBrcPHL9A01tpiG8T7c1q+DscD2JgdhAvsGgRb81g5Jf4AQ/wh04xd3RC0O+OS6Ue8ey6VcH9AMqCToYOZ7qLM/58ZN3nP4IIeTXTP7+kosI2orc74LlO5u1FWZRerIOexyGaBEr0gMQF/rv7bKZJQDxUP8xOQyfQK1ONlEHOx0iGPATjI0MqRfAh8jsjzKpai7rXejALEBmHzNJl7oZrFm9btgIiUiI2hVpfblsEDmuH6CKwsc1EU/2Ifidoq8Eyi+ENJvw0PveJTmRMCwbk2My9N0nMXW4meLZ8IaFHW74Lp9EHGNRE33D7nWNKRacGqHc54hXXYJo+VQtwsSAwIx5XdFeznW0XhyjUBvYJfq6ihfpptiziUtk/GR/l+Gao+eAgZdkUat0Bf6bnQNQ82SXbVSEhW03nxSDYTs0K/+SexuxOFvFRXvBKnFi9y0VioojAvF05ftxbAe/F0Ky9fb5hmTFZRRUpmtwbhFZlNrFuSndVVwKwU+pEOQ8O0/WTQ70xekUDnKIyea5MbMDGlOc/YREw3T01xtiyxEeKtdRV0PUAh4fdhvynxT41Gi/eE8sDPHi85a5j/yImdQwkJ6FfMPm+UOl1riGcKTaqKj0ksn5jGtvChfoHnK8oO0qNcNst2tHJKOAPsToeOHjWKoFPFBujOCHTGlGBqqULuhayjruKgk5B7D3X5+IH+r/mKGFIO2sct9iNRrZV4/Zq93xlDeU942kL+eFuTJ6MkuxM+GVuWJrxpbmzJ+nHGsC38EwMtmnZWtUI5yv6vLtLyA+k+CIclplDeVwX7eLylK+4Qu29occadeKf1hgVaYpTv5BrjeQDaPjXQ5Xb2WAE9UtKJRO24jKAofQHqvqyzgEfLzl7J+wejZKEeCE7JISyixpYTnqQAr9oj9amBLtJtVgoqHEWeX8i+sWmy1gXk9+b35eKRKmg4WpvdV1DF1IfKQ2MUyG4bwHQCGbTtCZxIF0+9uOe7/J0AL2fd5FUy2fpUYkPembq3gp4b3h8DacNVgve3/HB7oXb6nVBRbwIX0oMGb5DbIVKdPvnkDTJCATfnWvpRr+Q/eFMMtPjK48rHeA6TohT3j5UPQAM0Z+xj3QV6OgbyVTQsvJ9z90m6eroxa6Zl+7riMjoQa4iThGMJlnfer6i/xl822U4hMt8E3hsWMs4txGVdcbDABbo+EA4wbomrZsI6dDgPlHe7hrF8P6C1O8VTUnVOqm599yRQ1tM5t7bdDNK0zyI+snWwyI8P4yl9Q3BSksfa73KNkmp/FWK+aUDJfNSLU+tQrPeMVsu/oVQcWxrLWoRp7CaS6Ek/Qx7oacgTZoJF5Y+w9xT7gluaQ4zzDexRd4RBcsyOXnJdYdx6ivq5zlRTcZEYOValwwGgR1VLvJ7cja9bfFOA5vpuo606RqLxM1uVFz2BZpwjOr7Ms75y11J1x2qyQF8+V5xFbyrBpKLzBFd9oAco7jMETLHkqEKOR4R+1awMXbvsUEfbpu0A7n6qfyeMuqJju2tykK9yIZ4r0IgfIpUQJguRMsj7Eh0F/ELCJaQJmLz0qHzR78kq5gxWz6GmDVZhJOUZJ5FzgKghjukqXz1bzWGWWHWcq+lEZhWmSsRWB3NTSjOJHAnO6ofM73Hne77hhhUrZQ9nCCUHUXFEWzEziXwAzhE9V6Bf0ZkCWadPljSvYLvNDQANsu4lpHlKgKnx+OQc+aKx4mC+tV8QGtnPBdU66zVY47PFWXDxwJIebxoVNL4W4o9doKcjpieEXlvliAunb+qCD1ufTsXy9zyWDeJe2JGEhgPkMmJAx1dixQUznY71DwDq2QK9YHMoNvtJTUMqogzLhCdKDk30ycjEo21xhEQXl4qA5gh4T6ArPgHsEiKJrsuUrOheBeHzFWg2W1Uusm5ZxDQj3aGg6rJTShlmFvc6sMnDqdEfk0BUYZTo/xFzJoUOmxB4mcUcPyAQdfdg5iiNKp4t0AWmIuc5LknMG0GPEmU8YWHYlYkTL6TR5bo+5iYct2Or05j5hA3Klvih6WS1kpAElz2cEUWZP1eoNXD/b6+rdvyRGxWS7lPbS9BGGch69KUzJvfzB89tacJc01m8VUhxwKl4XTKXa+yQgq+mMYcPeqvy5zoo1+GsNOSXyT7PuFSRjtZilrKbjVWcPALksqGDs4ipU0suEoxugu5hZV7jXMSbiKvPoyYtntzhPHzL4q9ve7CqNzgLxUmy552giJMvJg+xakvin0QmHl1jdnnonZXOkIrnkGdnB2Ww4gCRF3UZ6egMaxnhXDkOiz6S9/wt0lrzlp40j3yC5GNs007Y6OAC0mUtMYoxcMrDwcHxHE32b9Fj0g1jvkjtos5jkc5AxnYI/okhsa/2D64VRT/yYthL0luCO+3tF5Nqc6B1pQq9CkjHg8hH0C1oC3Q/+UrpVGsLEQfhGJ343/TiYJFpSnrT3eDWdCwDVSqPkvfQFeCEFXJ0bLZkUitT7P+WYW1EWb52259lhkx2PeXoJuHDE5xabrzSgq3xNk2119o0+DmwTIhoM2Yiaun0pJ5LssRYpTedKHYiZSMOB9rOmOQ3xllyLWWOaEplFxHQGXaUV1XJReh3euf3FmkErHUpTMNpfUCvOBwPgXqTpwmdVBNJao2QB7bReKpkevB5yBQv9OIwatHrVrBMIM1v+jTKqhv7SUzG1KYHxwFKBbpXNRCKBgqfCkeWpowdxk7EJWsD/hyrNfsLNPi2RCVQ3klxIZLkhlVtugUj8ZZr37kq8PAuDVJFTMJM6igqxYsLOZC/qX2f8gPcFemxyo4iPebd6iNSecmFa2T5pQGCKrqXbriW7MDDbMvCOia7m0EwCBA4NZ3AYGknix65ZpqsfoLhkGzpFui6K8FJlOQfZ2Rsbdt8jYvnao2xgs3hvoKue+mH1qGmA2ElFBQQj/GKZIIbQ8Rq7+7HTb3grp0WtRIquJfdbQyhn04pa2GBh5z5M05LFHAf8wjpTGb74d6u8L0yj+eIYHmE11RHz8hUZSTQv9bsjbLmgPt4+0Zk8JRCrfZmQHTMUx/ihkJ4XX2FTmM6ZscOZ/4UbnoADwHa4L3UI5Nt9XQAeg0x8w7tqyN8stpGTYJbxuIGeYCUKby091R6JKOgoNVise8xsYEb5ktukROjrzHxkLQhOuTBE8UhQH/W7eu9j+h7EtrNbqwasDJO9OMRweBPcThpErgUlObcpWjEW7inpGY6qkLZwyXAvmJG76Zlw3Mkq9VDaCEn5L42/zioykI5v3q33Uf2viKO1qzgKTlKXdielq7kwUCvzuP5KlKmQYXacCKKN3BfMd5IBtKhtMZmf6evVevAhUQPIhUl9SF1yEzu/VZxFSpmDOr7WF5G7XAycnPDN68hniCRtfwjB9nR8diPyRa6EuYXirUV3MOOyYHyMxGmWzQH3QE5vCAezGw+yTJ4c4hMqWIddh4KshzgHqA/Fe04Uv7uHB1kseFxeGk6z7PqCnQt1HsNbrbJjWJX4T4RCHyeQlwg/nYI0KVwsR78GpMXHHTwq4LER+WpI1t8N59OBqKVG05aGfF7tFF9IX38oWTePg7StrVmNmQTtPYm14vsngMK5m+UFaumPITdomRiDdiDbTFh3o1D+LQNT4WYGwNXiDvPA9rMLVFAqfVvvHFmUHUJnSfy4A7POqKJo82hL8gHY9NOkABog82uhpbpyIKurTglgXl9yA0g15LsNyBnwpNIDhgt0dIgzw0YEHJ3QWMgYzCkOnxxQZq9lpFIH9wDoFxkWY5wtklNHWZTC+RZizPYxY3DAl0bZG56LljYNx6NNRNj7TuHj63PAxSlMXONnnxRervZbusuBMIL7gu++BTuUeIdoDkKdKhE244FO03oXYrXrmnjru/0rzl/2A4jdwL2sqw/Y0u1oMx+QAMPc4T9Bz4xDefe2YHcGKUWYK4uUnq7w88zndCzvydPXRPQs5Jrj6HsSMKUXJa27u39gz47DzSq4VutLLuxQIDrZWr1Nnxj+OixcgccE0iNuTC4feI9rQFvyfY+YLDWdJyFA/h/NJd71NLevhUjTlEPsc8QipALq9s+dpNzoNgZkFWUerpGtZw1bVFycX+EPC85ELhmHVxHPtmIp+7Alxm3jsuhpR48qMfZ9XE1uiAPmys5YonWzsNhCjPHYS09+Z90Frr45XWV23QMfk6+LLYBF7jf1gpAlyQWdUHGTjdfA9Z5dwfoQNeC2bCpJY/CmST6w0FAc3OvUP/q/PWfD0sqwSCfUnCJre2GQks0427MRf9hqQzOWqDvD/HkHHElO4U8TUi7we0MrSvxyyDyEK6Sg8fHOKuOa56o5fIwiaZD60+E17mFfzksCyAHtfRYNjw8oKsB511SgemYZxSoV6hboO9HIE8xNHXlzsGqoxWSCnDVAZok+mwwEBNO4KMKDOguD2QvB2iZE9RB3miqh1vdgxkNMY9xFQ0RCX0CBTwU6NQIQgmjZreEgPY2vQM0qQ6TD5r4Y2a2OyZJTZ89PhBosiuPGVqquXNv2t+h0pbiF3wbe86TKGSNYn3VBtMFrr8KNA/kVe98NDGI7sCRuH8BmnYOmR4wGrRnj+pJ13Vmm5MDV6bXt7HS/fneLHwwo0HJWYo6eoGljkY9kblQGGFboL8Ssc05V+PpxXrohrYTWVnLpJlfgCYd/coNhSMmgEeV+K+kOnyWNe288tZA3l+2UVZDQMumULF/b8B2dPTEhI+GRVCbDwE6RANhGQGNYRiYuuNQccWG7TvhHHw6THFsHUg9QIb28HW7m/Ii3dvGNCVK29MdI6ZLJGyip0r9uFfMxLVFDwFabMcGXvFZGAlKMwB0GhmBdxKLhwMNlTw5Cuj2HNrg/kCH6eyj2Fgl48oaERcQKm17QHMtTjsjUD8M6HMP55FEx8domME29zLW0szPcmDAMADNVG6Tw2fTMGlJmJeiSmz2B1opGU+lOhlXYGk/x4pImVcx0OHBfZhQo7+mOraaYxFZyMmHO9HeMIrFmPQ3TmvFEk3vH8+u1BFAg4VjgJZQFyHfqN3+QJfYiyyx5MCpS/tAQ8yxEyKlHjn5/5XzoQWaLsFDqLuq44vSMUGHmBDtEBCXTzMpolqZY4AWyTGqQ9rQIvW+xvLNATfxazyvmiTHvNLWxUUjao49idYh+chVL/lDgDamiRPqiay7QM/NPCgIHZFtnSRMxRubnHsBjdkxQJ8wnS9dioRF7w30CkScOmGfGI22vledEx+GZEizteXa8pJ7PSa1BTpdYKw67gCdG02/DFdlEyoxb/FEVqRl3eFAqwMCpFGjrskFA73YF+jfo/49xBFJ2qKFyps++cW5joEOEzg84FfreIwOwz9UC3Tkgd/R7mESabFs6R2jkXRQiaWyp0dItDxKdfAwVubjz39Bv++hvESxNE3XD+ECncC12QO6dOO4550x+m3rhH/dAxdqxa7oPUB/cbtSzKLoALn8/7Gsjyg+z+3o5EjVEcxL1HuP8laB9DjmDGCrjY7WHjH3aaTjtqqj1F/n59oCbVa6Jh3dBbqOgQ6/z2o5Gsc7l0fkHQ60gqN0NA9yCJYo6vIg2wdjPijuJBRp2ZPovBJR3Usw7/YAWmkPMdByEGgz693WSGKKx7SD5TA6BujRTbFw4fcGOrf0enr1WUKehsoZ0wsVXMSjaU0A+uv58C3QrJFk8xCgHcosHoPlKnDNMRKN8ijVUWE7FWqJ+6sOLebYI2POJHkfue55u6+jUMEW6PXXVXQIRwexJ30em3cwBPQMevTAJNLOfDomkwXiGIeF+x3PA/8UHERVMuAZ4uCV8nIQ6Nzp9GFAM4JzH8c6hoG2fcrGtv3iqLD/UfZdGD/CMrVMU7X/bmJzq+frVr8buJJBuYqBZmvH+QdUWxbYZli0AxMD7QaAbqTJBqJ3fzkyMyuTY4wOLuFXtNkPiCkJp2WvTjgZwVD5oIr56yeB9DR3t8Xd9+VyuI6kFKWBmCZaxt0wqmSnQPYj/+Nj++zhmDAp2aHQbr6D4tECXDYUYOdWpe57y0/jnRe4rG4C/18F2qOYq7Wqo+TZbW3K7brSzL4uy4H7QnsU0O6oYAf36ha3kX+z70fH5I5bUWWgZ11Bm0XFrpzKUqLR7Vn4NaC1R50q7rjC+HVF96zXYRTjUIqt7ZE73OyQcLhEZyR9ZXETKyj2VdMzsi2ToQI3bovvjsK+iOzAcRguWXsdTihdfgVo7bUWWhQuto/j0jJXkpqGJhuo65wcOTrjjRSHRzp4hPuNb1Hs231YVn40aJt7zlHN7tNwnJzVOfnl+jwg+XWg6QxRukQdAR2rDofBQBjOzsNxRHfoDtQdCUpkjvzi9mzf6z7Ssh4Q6JaKhFyZDtD5PEptTsCecoPPIm0f4etAO+4BVxEVaSIjMzzsDSizHd07R4m0PrAijOn4nDAat4zDBe5nSpfgPg6XEpLagO4oIfUubpOHMEMO9IOB5pi1yqPSu0RGEs3PoGSRDZcqnx7H0CEPLDewEpY8S3QL9NLtubN2tD8xIwf9W1cP+e5UVa44Tdk2aVXHV4DOS8v1BrkqSoiCaBnZfW7m6N2Ge597sstNBaPhWkPUIjD8qMvZAdP0Bti4HlZOGmZEqbQszE0i/AEfzom5QhRcBgfD3RxjbkEOVIKKi3zDrG5re/UznO04t9Y8oK6jI1Xdh03Q0IFuyTlvm5hqsjrwc7ajBK76iwH4q8J05sr0AKAPM6XH1QENDjwdeobqdzxxbZbt7H5TgZ8qNWZtcsXsSrJrl43xwCILESvpClMLMAN9GoD2a3JYdwxD5TnadFgWRcmu5t7ZFp2jlG5/pHkGa72vzsp5UGp5RQpaeXqeXYX1PGRNhLZ7rvVShcNea4U/0Jq1HcKvKReF2dJhubChIBt9qHLdUREuKzBc5KD1AQQLAIsS5KsDIqTV/slKUi9poZVbgdBQTnbVXYN7ZXKOhYQq2jMN1aIzwoNe8qHkLFp2gVYZfwhiSH7nXJ2q3o52189ay6aVWR0E9Gql5d6hpXF2gOLIdUnqFP/xmlnSd3dlfUBdzkLbZ7C2NtcxIcFY4qEWLXQaZ6cJ1+vQK13U4YrogeNXo12nkqbjlwPv56e43reEFraR2smept0h/Tp5wQVNKzrdtHxtpzvfIXgukC3osfkz3lroHmHTMRzspf1bFMcafYQ/B3FrT1ULgoR2BxZTSYpGcOBd13pvoG3Dr1LKT3sgPQ1MQ0Lt3eFflsHW1lBDNpnu7tkI9f4phrSNMil0mwM5FnSgRPME7TjcsSC75rptNCSnoMRTeU+dMsIf+TKpLvelsNZwJsQ7W8n5ZPpgnD9WZD07sTfQ6NpEDInsfdOxJF61QBch9qSrbrsrPe+BZyFXDFUdB22ahPCn37o+UOQw2510Gn+U7felsPdgGIPFZrN8S6aHfijS/5yFJy1Xv9vzwzbWB4k2Hu+LZY1CZ3ueMj2s0twS3vfnDtXRCru6gwuAVSqM05xIEJZ50e5lN5DBZr/1h/d5xyVtZI/07HryUP0cdq5C2NNq3zTenbVP6/V9zTGSKa7Sthup1lEeJhlVx5TeR7pjOiLXuBYX3ofG6NzfOwInCbN+WXccwHTkebTtr/Mz/+FB/YbM9WTbYMX+QLf1zKjhvkzlJFBomJZUaeljZtxQPn54DK1nYk1ciK4E7jNS4fE4hd5uC6N89QG8MExeVXNnKcqvx5cSpkD126jQvqU75MBes/bFiLQv6b1KppRrgebZuzKunakPju7waddnNA7/wJaMQtUDOiICbjuz57g/0GYBtWvPxaj1vy9qgSesDeKSMbDvDiagQ70Nnd0R91Y8tEIHoEN9UTw3Lsk+HE71w4w+StqBPIsLKoFOOXnRAXrSVTQyMC9y0HJ/oNnzbH+qJlHLhn2XQDaIWaDXW8xFehAd2zsMBINr2qZJJ8U76sXYw5sMnxC3VzKRKL459CwEiz1mUifhXKBlhWjEtRQfO4Z21g2aZ0HyCegjpp8u3wOXAUs7rEAwSDOKnM5c0s8HMKMw0IZUVJ2Ou1ISqaxAMNjSsTXkm2Sxq2QPnyzE50rkkUxDqiGt28QFphGTYwYxZSZ7LCu9PmxTmbZh71Vgc6yq5Obit/+XyeojJ70dlyURzodM6r4EYIrtN1JAV1NkMa1x4OLjBjcxizrGxxW6tp/joBWG3UDEmjGxHJYGMw9me8S2KyOerayVAuuPKBBr12v6TNLWoxG9ylGWjbIRD/qh03b2O1e0+8UUhTnoJAKe9hBH/EdVJpIofxI0GovOTPQe/Ih57KpmpxKzTuMOxz/N5+K95qu+yXoJ6Ig/urV5yGV5dSzSuVkHjlLaJZlsF6mMy+OZ1kkxzYyKZz5P6UNi/mgmiA+lwBcuqmXKSGcpPFiaLjlH1pvBwpOateKKRxVHycmYjRIjGW3rwszwSDACF09R1oEGL6yKCx2Qy6qOZUg/m6Ge8SuUkbdV9Tj+c50umOk5reIpHnZmnDr4pWsLparjUqQRPWQbEFS+RxuJdTQQjjWodzA/SvIKf0PgwLYYV9bZ8H+XJeL8uMmqWhnw4N9EM2/CBLJIoisnQm6pN2dpQtLvSrc/R/YXpwE+61pnUVJp/BG2Oe5YoiW4SNPJUYUwhxKPGlduv1R2fzq98OW1XZIp45bLwHBUHnPpV8ZyHKqnockB6pJEBDvakaPG3Lfdx07pqMCjBv3+R8GcTr2++nFWt5eFzqT4JATs2CiadjVNnWJ6zBBtdYn6SwgSP921S5aIxTFAv1e2ZKJZEU3jlLDBJvJJCGgmPacTuSv8HGpgX/FgHaYa45lRX7pRL68jypXw0BkjyrGNFOMmx4TOrPQI9zSoKLu42z+SbwNP22DuUQMxUnDLgktYug1PI7kSedUrCrIhNRfFZ7W0CHDcPHa2qcqZ7c0kkzCztGtFNDhSosM455Iwn41JjzoOC2fvwvkt54OQ18qmRBY1f4d0nYxnZQWzopr06/I4L3rUXV3VUL4Wcwm99AkZsNgbsycRL+so7Rb6e7/Z8BS12RiTf1Og2dGLeBJ5b54J0Zv+dpkHxRGbWjUuQL877jZI+SzFEmT8xnlkRB9otrdsnUaxetpW32YQap5vyoaMe2ttWmyW32KIjpo5aOLB8mMyIcMgi3jYENnbWo7jMJslHQrnx93HBtfWiKXFaMLLyaSuwsnX+cyPCIr+Ts66fL8T8is0fgOcTYHIQxZQe+8hTb+FaJ+Tco272XlaPB++/cGRHOLpNXKkzi3+pA5lcdquX/3/XrIOq6IxCWw7VvGMmMyVaoEY810k7CmvjsfEmDSFxuiFb6B0aaq/gRJRDb0yjPiJuWghVeL/7Q/3RRxNuhMXOB/QgA0pGnOcDnPmF+VcF9NpcsK8+h+iw/BUCAIBI3OQRPrIM/kGad0uo9SWx8IURVEch7TvD4ygR7ukjWx7QMdWYDuHDYpvMot7o9czlTuMpPdk/F72JPqaDpZSWaji8xAlPMbsSM7gIb4+8hjyoySqWgA7K02uZTz8JOvVA2Zk+xbNNxltp2oO/9EhEGfixyIe2MQSrWeF6Hs4UoJ5FKA5V7q3Z7i9lb+4ZRgLHgt0Jf+FnNF36zpqO5hkvfTlRIYz49s8mw66h/tJIzWdjGNDJwz7I6elx2Q+hqoQuNROGPOtEd97qxQ69CqUGAIJmPZPFJ5bv7YgddfU6lHxkeV6vcZv90Rte2IRz1vvt+lw50G+WOCsqmPGC+TywFQB7UjxxMu1nJYsi7lA7A3maIEmow/M/c9LCtp6V+j0G2/T+2aBbBVWOF3w1EvVsaWnYy11YDhCZQ4as/QtV7EdWooIf1IxQyZzM8AN0GdfKXGo0HuX6m8rOmYOMq5LSgaAJh+nZK78JBqdRg8QqKS0w/RpgTZtc7Ay+Sw4CCfdyi6JXNlfkBOOZ/c97cmowplnM/Nb31/p5L3jpLj3IhSnvWOy43mUPUfmy2ltNHxi3UHGSmAqyFH2SJmzinnflXCeHBl1Xy0JKY5L786/PdBBrd3LWBLYyNWsVmKJVbdeP+FO/HIrT/5JYW6L6A2/7Xfkq3Tq55Jx9YEHnAm1Jj/mPqCnY8RSpWn6KIrQIVb3IP2R+3gJ6PfBaooHw02qkJcxAE96HBrmVtU+3EPEZtRarP6fFp/opPE6vQ9oepz/iYLdp29/i7kuagn3IJ0xNec7+57dnFSquAAFJFfx5gj6KQffFwHoLcVzTMr9MZvlgVTZgOHJsveW4iGTaOaPMIh7pmtIJYzuAZoMC2wL7cxCljEzUZhoJhDxKc2OIvR7eKyFtrOooI3RI71Hh/WFxlmBu1v/uTIJHutQJ3PI/l7I3XxHH3nSvQg5SsW8B9BDerHMRWFLo54aaB7XBBCXu1VhCNSKSdxq8mZ2H/2TjxXCcWmj+yKKrIL/ZneLNOcaNq9E65IsoF+oICXT4SlldP50QKftjI8ZQo8MTIImvTfXV+IXOMc3O6t4J7KqPOfhH+cW+dKc7t8p03SjtSiEgvL3bE/rOOYhlXTB8tCX5ZPJ9LLQKjcb7AUZTyYZD2sm37wx4m+aE4TJTpy5ebJu/u1xbpEcKmy4wFGOhvfUqJKWix/XZblk3sjerPjJqAqpNfVou+4hZ3qRkkFfWsBoErGUcsGlOg2WXJLktUp2dTKQXrkEW79+nDtUWpRzUm6vpNzBABhEWhgLNhXeCLeKbnWatTVLCuvN0wG9Xlmh+iORuNYnV2+wtO0YBEC7s2n0vBEXRV4+oudlMYzQrppkaHBmJq0yyvgG5sLxmeyqKNeYhXCpuoZOf6v6borkrRK5ZfrumeznpGCzFA3tWHDCMKHfoOqYcC+jg6Uiw+qxbrsoXr+7YlhKK0fjbDjM0nIL1O4TIfo+LqKftvz7xfXdYyR33n8XTaLINPbIg64E9nr6CUCrRONInlsS4WqoeSZhu07zNDGTevdI9znX5ZbOjvQHjMQAU8tK8HS9jUXVEvuexwfnOBjTCpruKWu/i7OoPJ/QLW+O7eMsnQuHfcHCQK7jaBDnqqUuVpp8x9Xj3KdZ6G3lPtJJMkhNN54IL8EC3S+W79kYjWLYU7rRsiWvyW/LBTojGh5VccydP2VWjjh5woYEOQFnPFV+JkzJPVdDHQZc/WW1YVFW8zR9+0gCgRhKvunM/ht3GGb98PT0JBmRY6udo1dhU2z4fXRrU3gog1PeoHNubW6P2e8ZUiKc45OQS2TbWJe1XLAiBk3YkWwnU5498j2m29mxZO5rD9WOJsOJIG3n5rQ7ydWegYwNFJ4zEpjAEbV2393MUyQBMnauSXF4t+1xtwHmYZwrqBfwnaK8zJ2f51xAIHcgnUxOuRgf69oG/k7oOZDItNeagfbfJ5QXihRuzhesTDR9ZDqpbKHTdMHkgHLXHF3WG/TY5Ni6vUeOHiAQRZo2OvT5O5DDJBLTia8qaBmGRBkXJZwkDalDehEpeVf+uyCt78aNXc+cmE62vFysNCoQw9NQ6ZvwZgMy4cDjHitKMzotOEjaeFcveJJBm+QUxvVOzYRM/nCs5kXjffod5JmB1q2Khg9XmPRDcSuxbRuyOIwzD4C7Mb8cofDILpfSqStvkzd6d2J8OuICNrIm8gEtzS+hvQI3Yj+ySHP7dpqyzabOQkaiR2EwgsClahCluG/O+e1j65reyOyxgcY7E6gA5L15ANQ+tcyZHhWnQyZdmA+Xl143jwt0wWrDcISeo/1O9qhcRpWlkwdrEuiJvK+2AG+fmnRMbc0jA30nG6kA4L4BExlXjQFXosQPkMyxzdUWGh9ZpJ3dTqUC+kwtRe8gZP6iEPOU2b0ZlRtv1nwXoMnNyG+PAQ6E3s8hylLN1glpj7jU2wL3Tm/gkYFWzrcZHUKZju94PA/XySPIlBvOp7t7+/l1NKo1+HOcs1FVmkc8VPQXZ87Qxwpbia/NPWCprugput1lJ+NSwkx/B6CN35Y3NLNZhdJFVfJcC+0rloR7YOZ541DTA6+DnqYzvIRy+Whmh8Ibj0WYc/ooUby2Q+Ms+2Qao9HIRpI0zkaSu/aKdlTaIwJd3hJLNMy20AWayy8zUhrJ/YRC05Go9FVOBle6NXKLx8NZqLLZdl2LJS5wwQW6DxtNk3A0pjeNkVS3FWh69TTfNmial9vabG5GMKL6r/iIk+PxF/2X7LQ5kGtqQH+PKiu1XC5vVMfyFbe3OFZvkwfgHIIcAzRijcZ6sUjvYKxWM69P1aBLmneaF6Ivv/y92nT8NlOWxqJd0hHGwcSuQI8no6gvcofqkPCrqC28WorvvZQC/G8LC+rQ4TTTiagsl3ReF2LrChg9T63/bC6Hhp4URYFFfic43vnydm2KeTq/C7TLX30moMnK/AQRlU2SPPhew1So8olKf4yGVGK32Odk+mCkx8xBaBeYCjdfco/E0uQk0mZF52xOu4f+rmRqpeD4Mt9i6r6QMy3bLwOgBX+XJQeZ6Q9qVDe6JzdKbTafnVgpfANViUk/2viwlQQytrMnqvzxKnTARdU+e1DkJpByno5emEg9KcA7AhrcOYCVXlwvFgvDOKNz3jXtmIR8WeKaviz5Rwxpn+vF9bXW17QWcCfaiGu8XNOZS59BimqPW5t230IYeCI2+mkkGoXXNmbUTrJJJkcPlJTxOFvYUNipjOlE/0M3EGnhN2+MtXYeJh55jsHxRIqi4HgUfeEdf6X1DA3Sd77haSB3tAYrIus1VxQpb+p9RCDW5ZW8DG7DE2kO2rDaRm0UTKXhRg/fk7Ak5efvPQy4AYtcfx8WqYl0Pk/Rhq/wi8l558bMnR/NvSaROM8m4z1gzia9s5BLeY+aaXeMSJ/qX9Oq35pA7ol8GNNlG3qyYvWQ15qSfHIlQ7ok7Zum58wazhomBtrSy7hD+nPGoyuyiXzwu2fWsXG3Oj2TDQFdwNOU0CsvtHXzaDBOIuU1+4IPPNBhNIomtJpYE35pRTamoxy2X5qoZ9V5323fAObFeaBAjxnmiP6NOVkxjCt/ol4FZfQbnX94HQ8vC2dk9sApmwnnxMD+Yn9HGtCeLgtN3uJqjesUcMnH2dp78UuYMNqPFynDzNl/dH6NFv9OanyunWdO/BBjE/Z1rglm+oDk4dIMgZB5cldxgAw6wzfzpwFaaDQ8NMPe0RPTscnQ2KJGlB8f9nhomNa3It+HSzRJ78/fQu0wxRSKNC3JuPgF9O+MaKko7h53jlA8A07zlnQ6ku522nOnjPJ/QrgE5LYZ1q5/TB6uNCxoiNThWFbBubSLpwI6TJXDKII3BnjH/jo2D52WN7ZWjyc2BJ8QYT0LhLYOfne7debCDneEIqT+RtO8Mjedemp2CoHlCpzXaMcPNJU5J1gadEpeRXM/pGoj20/kr8xbqvOYdzaDtj7GGCZPyx7ifiVtAztTrQQuCpyhPW8KsW36rgkw5+1bDO4LLct/AMW0WA6b7bcZsr9mQH8BKasLZt+Z3BO+6OsM5i7gejqMp7qFhrgifaoKWF2XgqUp7pNtZ9Jtg+5c/5EkD3TBkpPR6CQjG4HTzezsgSbzccUML0CWHASuY0/2NFMSYMnGJb8W0K/g0iNHX9Y8YJNXdvJAdRFubVRJuWWRNeWKTJsOqTwfhRcazNkTAb2Cv4lAWs18Vcld6aiAlNmFEhc8HQc4GD1+8IyxpKUbg5AuyFhrhjwv13qG5Gn7e5BtaJMKsoQsfOsocA7eSWM+6PUmpDQqujpZ22JZrF6zW9IxTsfcENeA9mdPpqHNu3KoAYubIoWBmYYGdQkNtykQ1gcGn0jMuSRHY11iSSsAHCS5Kbn0Uwq5nfTY3sV0utfVJ0wMiTwyJlW0ARd0wbIbfArFCPyZTwV0QVs7jL7pRdOryor1CmHhg+VJpgBJp8gORJpjZ4G8UQ6t6sEO/0AiMAlXBhPSl2WKNcelZBdn0hx/LxloeLrOm9TPGGkte9xPdXDQvN+YNol7yayio0OFejq9N8902DVPxszRjLMFXNzknZnozcTjtyfSei4kQ/N0jTdzzUNHDWmHiPLCAlNegXWth6ZQz9pA3/jwEafHr2mnGnPC2r+GGudqG+vThqPsvcGkrKINYOmeTqLnK+2VMG9BxglBaJxabop0G3NQmHOgj/cpYZ08Jc60N6acWWFFtLBX2jh/yY1ip6FchU+cWKA/gMjVL1x192RArzwDLdauTzkD9R9ykRc3gTRF91oGof5AW3PUhtKmSfLdsZ5OeGXAdjZeA9Prz+C0mZHfrrcMr5M4i28du09PCbQAz7OWch2XfXG1hGqjIV/qzZf5ctaabTz8azIe/9/T7wzzdDwaV2wosq9/xkY+GUaerRgPuuR4ON9eN0aWVdf2tRDeXjdPCHQagOYaPBHXpbSVakbHNF7gLNtkpCAzOfq+GnvC+qKqtq6JMsH/sQ3XD3vjGecc5LKKJOZDKAWzWj8l0PNVqBhlQYjCGhPAZTjKyYFbdmsInLZzy76GPGb89/5r9JFjKRB6uFvXfkHn3Jmyi4W3rVzQOdK9pYReS6hm5KlvTwm0C+I6v6xjprIk095aHrToHJfoGrwhlaTbPS20qdmJw8l3xJlfLHI7EE/j3J7RbHEohIasDToH5wA9rrstB9gr70+fDmehzkN+gwy5XqBuBC0xB/oQetKAX1IhgZWEEx9yJMffD2dXzLl/UC8ui06hQggXFcIvoUdHIm9muqGz8yeU6NDW8t9fKQ0zGSXzeTRJTWKSWs/9YgWCvqGPMHbd3jwHQu4JYibfFGfgjXX+Z1yFiZalbW4bjLdkC4YsEYicf9lOHeKoL+ZPKNFCp6VKyQ2c9WPPZF1wZatJA9AXrgbTUsSZNN0mSyydovabiXRycl+tdtXS37QjkfQ1u9TudQdojGYLBcYw1EXI0Zdpqp4UaG6JQ4MzM4sL+7nopBahZINkiU51T9pju24NEfq7bDDPNBqNsgw+3gSKHgJzhmTJDNdcjqr2sCsBL9qd6G0IA/5imFI4YPgnV3XG9dCfCehzLmKfF3N8YqDn1s3AkGCTbpCzLmLcI2mCV+OWQSq4HIMc3Tb5avzrMMecjNohvyVJ2BAL0U9a4/DcyXDCYPs9oep9sH87DFhqYy542+2acp0Ik+FsmtaewHjme5J9rGphhDHdNoenkWgg0ajFxp+xh11GSEsZbL8AdMhnh6YdHTo4cdvWJ2bVYBo3gYzLxqvdgbsw+SYkrKAdMlSRNT+Mc9sVQffouS5T30n9qddMPXQWHsV1XmXCwW7HqQBNCrJ8YqBN+ltabhkDaS9GZcYt3zVtVLyZ5GxCy5+ar5knoQWaDeohmR6j5CbW0FtCa/E7/IW+tHdWgzXgOSdWgL9TSq/HQzjTzuKD7M3NEJe7w2GVdlrXmrQ3mfaxXmd+qlDUMEd8J57Pgh5gsrU0SrhTBE2nIx1F9ouFlRJM50OSCIELHP4TrQeYmXZP+LIs6T+EUq9bQ+APZEbMnJVxwP4GLw31ncKR140r7/DEq0Ktl3p9+qE3npNzn1Y8w8XDND/EJBgE1duUsbxTiZt6EsKOrZTXw/nyBFRVwRWz3qRthb1S2jAH2pJzLTwgjFSo4ql3V4h+wCZPkhEsym72Ojdf+veaS34HBe+KcU/h2E/PEWeyL+CDlOOuUCUcwrFi8/u/F+kNiUFelEWXJMd46P3kTVIsZEDUTbGf98WXAiZ2mFEBV9agF4PufJg3FavXPD3fzqDChX/FXct1X7uzCX0mnuli+gWM1DR7vsuQz/ozHX9muMR46clZkANZAa4SYlUZeoOdI9H9i7qTtPScKb/iWpDYZGiNQsbZ6pjgOaf3xYeHAraYFP14z0NlXvQPzxRnMjRBNP1W2hHtfqVolzp/rf35js6g3Mosz/oyPU1cqKopLxSPVga8vNN2Rq7lLLQy1jiknZNRMOt6n5iTF+5TrXSzIPOadkXVK50OXXHPFOjmWgllQ7l3jx/xj/R0mxK89zs5UzcLkqvJAF6TCQ9jCMMC1St76kh7lC1VgRIryTaYMFnv55KgNuTgAKv8T5pekc7NhXXNf3I2Ntbu0zv9m8/vMHSsSmvs68qRleJtsFlLt0OiTQhNgZCTZCgLnk2yRrcmgGm8Rc1Nf/QTDVf9itFgjXCo8hjWVKi9e50H4271b7rPt8qKA+lHrX6OQBeMlqEnj41Zum0rnVJ5YYplGkKmZghoRQpXLneU600yqYt3godBLREMV+isXIgtZ0Oh1mTM42m4NHEgFJR7fbuzPsNAP/s/k4tThASSep5CbdZk9pNKjTdyIp107SNz8jB32wx/J/84h6Va2p10vjIQ24SQhVnRW30LzCwpRqNdQVGm4BPLgdz1+zVZLzcxzw++T0yZbHFWepY+S5xzZrtAPltiIUtIly7ayBkZzUr02FCWvt7+M5OUD2qCUSM4muatYrWhSaXLHTDzlDw9a4z5rcQFRjb0ZmM5yMECfVa/hZD0jgO8ECZxMllN8TwtaT60fDGr+sQ0TJRCFnXDbOgIszIuKm8r6Vjgr3jQ6DAFzIiJtNsBZ+g0GRQ7Ov4nIxnIORxdtO6+UqNLbjMKmkMj7R+R9XGu5CKcoU57/TyBJqH1KeH9od9Om0gOanDBisvB9YYqI/nJIfKjUgdVtisuOp4IMhaRh1lCMZrs5A4NxoahK846p4EyOgBNxo8WtYdgu0/jAyVDJk3i9kWD6plKtOEk3EpLTPtIj8NkQ4ek/rA3OkunpdaOudS5SR6yya4S9jFXPBJCZGrszlmxM5rW5Ljr7qmrNANtQy/X7FIyo9y054tuKX3IjDzNnyXOxoTJ0WpBvhjIetKvEyJToKr+JMCW0Nd9SmlLe312ml6Iq8CdnOyqsq2SZGdp2YgHZIegvnf69K2KgGY6mhSx2HjydCDpf8aY2auUeFV/mzlqj+J/b6O87wBK0HI2HjQdBDPSrN0gdYRuoC0G4KZj2N0qkOwuO83kNeNkdK3r/meoOTP8Fw4cq6mhzE7ykdxQugDfiRfPfCn1Vhst3VBsOEkQScsWdBAJLaxrD8JbtiJ1NZtthRDw497J2QmH+Ntw0ZdCkoYUxVpo05BAv+HiAcv2yjgZzOvQKdK0IfQnLePYKzi9GC6PSXhcYKjc92+CpwKf5yHvou8Q3ND+WKQg96uoDky4sNj2H+Z524SoybnR3J6S0p9KB42xldlRZ5lImYofbL0vpZTDz5OMPTJ3e3NDaFau9bkLS4dXAO0UcF3D1/ltOhFR2huLt6jT8zQ9b1d6/kUuyZPkXiPd7NLvGY+B/tGAVtzlJ8UO02AMKTe7ITk4uQqJAU5aAc+nan/NtwnUTD6wlmkciifP1Z8augj9wnaVN160sZYbXEht7TAKt12G5ocDWoMnQ1WMd6rTMScLQy8KIVzmRV6YpVHhF+FuoPFgFb2Oh9R9TMdZ5oATAaCgJGf/VgfxH9wi7BMrM4TJyU6cpXyeqauvGdWp+FXY3UiHvkKuJ+CGKwPdVW01iBTwwA6ViUXe+f/G0Wmm4+ZAKIbf6sBIy71d909Uk4jiR10o/I4KgLt1L+MsDBkPv9q2thqB/RKZjfc7Drlfvtr2xgV2H4vMJxL4Fr5SoJ5J+EFxDl7V2jNB+vjrHQ+9oo0kO7ALqFcD8pDGXY7XKfJLz8yPKtMGdFXZQ6oVv2M3QDL6sG1QOC1+RJDVO+vLXK1IOU72rWT8js0tyZijIyFMR7r9R0RauzbE/JmjZMmeHa3frXuIo6ISyjPRctpe/Hjy/O9rj1xex+UXZFxMxqPx9NnBPJ7wSbz1nOZ0HL//4YD+77WbrdrKl1AdJ8l7mYyfF9ATVhrVdVthunpT+ovVjyfQpd2Gh8wp2quS+WVG36Y3KJlMRtm3uNKIBxHYkNUqmHj0j+pHPAl1ObvJb2E7IIuDzCHJNz1Kp45GoWR3fLQ0j6C6ZSO81FbD+oc07N5sy5/VQgcFwmUYjvwHwik7GOqEZHlbL52NkmOVhmWCsa0Zego1KPHTrOLvyMEdwnq6txUy4W4LronhkjvmmWFa6r3b5/hTx6NAgw4r8RMuZYJcmzJ0zUpJmO0RAh0HehluPwLN9O9n+Yqr09m1/pg9HOyEXxcH6Tia4tnlNvlPBzRiKM+qveSKDO4TzjJ4CEZjFmSENhxyfsuUbV5BiF6j5kaX8Wj0dQcomRDITPuGev5JB0vfuZ8VaCUKbi8Ez9JJAlmFSEiyq5+tZVVqOQtry5viS6WFUeXVPNcmzJKqAvtiMnStpI2Ac80jMEmBvcqVCIyBuHi2RV9HBD1Sva0nVzmnP1UQ7G3n1Wgg152RVqhCNA7qNgGo8rRNmOZ5N8fAr8HKtoerjzM30vHb4ilotyVS7ejbnxBoxfm79qHa3XrhuMVHbvnAeh1XH4Mcc7jecYldmJFB70eb+f/gYWZGaLu6rZQ2geDG4mADVxX+Byi5ISvdCPtGuLcqJBbRX5c/44GY6zS9Ur61rv+G7zD0WzUWXBvur7kDi38jyFhIYV1uU/5GeMVD+UITZmC4q/UajdKo3rqcX6Ow7dXaH7xzrSDupHY4j2PRNh4uFzVA6uhtmTlufkqgC7Kkr50Ou1YzF/RvN+2oeeAXXeN6zb9huenS96d8EtIPaI/ckNXSDwYiU1hod3N120Lsy861DE8GNGVapo4uAG0LHH08/YMy2vyUQBvuYyN5VEpxV1VhHqggFfcKoCu3i4BqmpoALQOyPr2t4eC5Rz2DTd0qr6Is6WXUtbW1XYfOFpX/jECLTelD1ag2aQeIHZNXmLzk7OxsdZXSSyl6COYmZc7jUmvflPOrXS/NzDUJ7vA7VebnBDpfrpmJEfWd/JzWpATiqs1AEPMmVN1qPZvZATndSjBPCaFN4tzpru1BKqex82Ed8TMCHYZ25KoonG0afZvIyFPQCxvDUIZqGq2vWZOXn++vUl4tSu/gdNfsDtpE2uEOZfzzAU2n0HZeEM9GKVPDQ1IY+iWdYdoG801tFzvqrmmsde4VSWz7VtSNoPMAuptvDOuscXR6ci3r9m8618qLN2+KQoV/Nma1+sRjLlYrkyv1MyoNNVuYz3eEStdM0aVvt7sxqUk1YUr/45GJr7HYdFQEj09IERtaJOT8fxbnbaemMi1mXGwX2EDuXOvLYUD/Ropo1k7Fgdlnn2rxUyLdXHT2tjZvtFa3ld484Cr8Cr/lS/qvq4vpGzYbNn1peR+qF7XaAp1/UewbXp1rffmEX8mv0Wx0kAWjvfk5JVqI5/FYNxrnZ0X5Zb2sl/WyXtbLelkv62W9rJf1sl7Wy3pZL+tlvayX9bJe1st6WS/rZb2sl/WyXtbLelkv62W9rJf1sl7W91j/HxAVRPlJpitlAAAAAElFTkSuQmCC" alt="Ascenda" width="132" height="132"></div>
@@ -516,8 +465,8 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
     <p class="question reveal" style="--d:.26s" data-i="hero_q" data-html>Every owner is going to have to answer the same question over the next five years: what should my <em>people</em> do, what should <em>software</em> do, and what should <em>AI</em> do?</p>
     <p class="answer reveal" style="--d:.34s" data-i="hero_a">Ascenda helps owner-led companies answer that question, design the operating model, and then actually build and operate the AI capacity required to execute it.</p>
     <div class="hero-ctas reveal" style="--d:.42s">
-      <a href="#contact" class="btn btn-primary" data-i="hero_cta1">Build Your AI Strategy <span class="arr">→</span></a>
-      <a href="#shift" class="btn btn-ghost" data-i="hero_cta2">See How Ascenda Works</a>
+      <a href="#contact" id="cta-hero-primary" class="btn btn-primary" data-i="hero_cta1" data-html>Design Your AI Operating Model <span class="arr">→</span></a>
+      <a href="#problem" id="cta-hero-secondary" class="btn btn-ghost" data-i="hero_cta2">See How Ascenda Works</a>
     </div>
     <div class="flowline reveal" style="--d:.52s">
       <span data-i="fl1">Strategy</span><span class="fl-arrow">→</span>
@@ -527,189 +476,181 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
   </div>
 </header>
 
-<!-- 2 · OPERATING-MODEL SHIFT -->
-<section id="shift" class="deep">
+<!-- ICP BAND -->
+<div class="icp-band">
   <div class="container">
-    <div class="eyebrow reveal" data-i="shift_eyebrow">The Operating-Model Shift</div>
-    <h2 class="reveal narrative" style="--d:.08s" data-i="shift_h2">Most companies were designed for a world where execution required people.</h2>
-    <div class="oldrules">
-      <div class="reveal" style="--d:.12s" data-i="shift_l1">To grow, you hired.</div>
-      <div class="reveal" style="--d:.2s" data-i="shift_l2">To execute more, you added headcount.</div>
-      <div class="reveal" style="--d:.28s" data-i="shift_l3">To know what was happening, you asked people.</div>
-      <div class="reveal" style="--d:.36s" data-i="shift_l4">To preserve knowledge, you hoped your best employees stayed.</div>
-    </div>
-    <p class="punch shift-punch reveal" data-i="shift_punch" data-html>That operating model <span class="q">is changing.</span></p>
-    <p class="lede reveal" style="--d:.1s" data-i="shift_body" data-html>AI introduces a new source of execution capacity. The opportunity isn't simply to automate tasks. <strong>It's to redesign the company.</strong></p>
+    <h2 class="reveal" data-i="band_h2">Built for companies where growth has outgrown the operating model.</h2>
+    <p class="reveal" style="--d:.1s" data-i="band_p">Owner-led private companies where adding more people is no longer the best answer to every operational problem.</p>
   </div>
-</section>
+</div>
 
-<!-- 3 · FIVE PAINS -->
-<section id="pains">
+<!-- 02 · THE PROBLEM -->
+<section id="problem">
   <div class="container">
-    <div class="eyebrow reveal" data-i="pains_eyebrow">Five Symptoms, One Problem</div>
-    <h2 class="reveal narrative" style="--d:.08s" data-i="pains_h2">Human dependency limits execution.</h2>
+    <div class="eyebrow reveal" data-i="pr_eyebrow">The Problem</div>
+    <h2 class="reveal narrative" style="--d:.08s" data-i="pr_h2">Your company may be growing. But execution is becoming harder.</h2>
     <div class="pain-grid" id="pain-grid"></div>
-    <p class="punch pains-close reveal" data-i="pains_close" data-html>The goal isn't fewer people. <span class="q">It's greater capacity per person.</span></p>
+    <p class="lede reveal" style="margin-top:44px" data-i="pr_close1">These look like different problems. They are not. They are symptoms of the same operating model: execution still depends too heavily on human capacity.</p>
+    <p class="punch pains-close reveal" data-i="pr_close2" data-html><span class="q">Human dependency limits execution.</span></p>
   </div>
 </section>
 
-<!-- 4 · PEOPLE / SOFTWARE / AI -->
-<section id="model" class="deep">
+<!-- 03 · THE SHIFT -->
+<section id="shift" class="deep">
+  <span id="where-ai-works"></span>
   <div class="container">
-    <div class="eyebrow reveal" data-i="model_eyebrow">A New Organizational Design Question</div>
-    <h2 class="reveal" style="--d:.08s" data-i="model_h2">People. Software. AI.</h2>
-    <p class="lede reveal" style="--d:.14s" data-i="model_body">Companies used to have two major ways of getting work done: people and software. Now they have a third. That creates a fundamental organizational design question.</p>
+    <div class="eyebrow reveal" data-i="sh_eyebrow">The Shift</div>
+    <h2 class="reveal" style="--d:.08s" data-i="sh_h2">Work can now be divided between people, software and AI.</h2>
+    <p class="lede reveal" style="--d:.14s" data-i="sh_body">Companies used to have two major ways of getting work done: people and software. Now they have a third. That creates a fundamental organizational design question.</p>
     <div class="trio" id="trio"></div>
-    <p class="punch trio-close reveal" data-i="model_close" data-html><span class="q">What should each one do?</span> That's the operating-model question Ascenda helps answer.</p>
+    <p class="punch trio-close reveal" data-i="sh_close" data-html><span class="q">What should each one do?</span> That's the operating-model question Ascenda helps answer.</p>
   </div>
 </section>
 
-<!-- 5 · 5-YEAR STRATEGY -->
-<section id="strategy">
+<!-- 04 · ASCENDA -->
+<section id="what">
+  <span id="about"></span>
   <div class="container">
-    <div class="eyebrow reveal" data-i="strat_eyebrow">Ascenda 5-Year AI Operating Strategy</div>
-    <h2 class="reveal" style="--d:.08s" data-i="strat_h2">Design before you automate.</h2>
-    <p class="lede reveal" style="--d:.14s" data-i="strat_body">We work with the owner and leadership team to design how the company should operate over the next five years — and create the roadmap to get there.</p>
-    <div class="stage-grid" id="stage-grid"></div>
-  </div>
-</section>
-
-<!-- 6 · DELIVERABLES -->
-<section class="deep">
-  <div class="container">
-    <div class="eyebrow reveal" data-i="deliv_eyebrow">Strategic Deliverables</div>
-    <h2 class="reveal" style="--d:.08s" data-i="deliv_h2">A strategy you can actually execute.</h2>
-    <div class="deliv-grid" id="deliv-grid"></div>
-  </div>
-</section>
-
-<!-- 7 · METHOD -->
-<section>
-  <div class="container">
-    <div class="eyebrow reveal" data-i="method_eyebrow">The Ascenda Method</div>
-    <h2 class="reveal" style="--d:.08s" data-i="method_h2">From strategy to execution.</h2>
-    <div class="method-grid" id="method-grid"></div>
-    <div class="quote reveal">
-      <p data-i="method_quote" data-html>Strategy without execution is a PowerPoint. Execution without strategy is a collection of automations. <strong>Ascenda does both.</strong></p>
+    <div class="eyebrow reveal" data-i="wa_eyebrow">What Ascenda Does</div>
+    <h2 class="reveal" style="--d:.08s" data-i="wa_h2">Design before you automate.</h2>
+    <div class="statement reveal" style="--d:.14s">
+      <p class="big" data-i="wa_big" data-html>Ascenda helps leadership decide how work should be divided between people, traditional software, and AI; designs the future operating model around that answer; <strong>and then builds and operates the AI capacity required to execute it.</strong></p>
+      <p class="pos-line" data-i="wa_pos" data-html>Ascenda sits <b>between strategy and execution</b> — not an AI agency, not a software company, not a traditional consultancy.</p>
     </div>
   </div>
 </section>
 
-<!-- 8 · BRIDGE -->
-<section class="deep">
+<!-- 05 · THE ASCENDA MODEL -->
+<section id="model" class="deep">
+  <span id="strategy"></span>
   <div class="container">
-    <h2 class="reveal narrative" data-i="bridge_h2">The roadmap doesn't end with a recommendation.</h2>
-    <p class="lede reveal" style="--d:.1s" data-i="bridge_body">We don't hand you a strategy and leave. Ascenda builds the AI capacity required to execute it.</p>
-    <div class="bigflow" id="bigflow"></div>
-    <p class="bridge-caption reveal" data-i="bridge_caption" data-html>From AI strategy <b>→</b> to AI capacity.</p>
+    <div class="eyebrow reveal" data-i="mo_eyebrow">The Ascenda Model</div>
+    <h2 class="reveal" style="--d:.08s" data-i="mo_h2">Strategy. Implementation. Managed AI Capacity.</h2>
+    <p class="lede reveal" style="--d:.14s" data-i="mo_sub">A progression, not three separate services.</p>
+    <div class="model-flow" id="model-flow"></div>
   </div>
 </section>
 
-<!-- 9 · MANAGED AI CAPACITY -->
-<section id="ai-capacity">
+<!-- 06 · FIVE-YEAR OPERATING MODEL -->
+<section id="fiveyear">
   <div class="container">
-    <div class="eyebrow reveal" data-i="cap_eyebrow">Ascenda Execution</div>
-    <h2 class="reveal" style="--d:.08s" data-i="cap_h2">Rent execution capacity, not software.</h2>
-    <p class="lede reveal" style="--d:.14s" data-i="cap_body">Ascenda builds, deploys and operates AI agents that execute defined areas of work inside your business. You don't need to build an AI engineering team, maintain infrastructure, manage prompts, monitor every workflow, continuously retrain the solution or manage multiple AI vendors.</p>
-    <div class="eyebrow reveal" style="margin-top:56px" data-i="cap_manages">Ascenda Manages</div>
-    <div class="manage-grid" id="manage-grid"></div>
-    <div class="cap-note reveal" data-i="cap_note">Commercial model: a recurring monthly fee for Managed AI Capacity — not SaaS.</div>
+    <div class="eyebrow reveal" data-i="fy_eyebrow">The Five-Year Operating Model</div>
+    <h2 class="reveal" style="--d:.08s" data-i="fy_h2">From today's company to the company you'll need.</h2>
+    <div class="fy-flow" id="fy-flow"></div>
+    <p class="fy-close reveal" data-i="fy_close">Increase organizational capacity without requiring headcount to grow at the same rate as complexity.</p>
+    <p class="fy-note reveal" style="--d:.08s" data-i="fy_note">The goal isn't fewer people. It's greater capacity per person.</p>
   </div>
 </section>
 
-<!-- 10 · WHERE AI WORKS -->
-<section id="where-ai-works" class="deep">
+<!-- 07 · MANAGED AI CAPACITY -->
+<section id="capacity" class="deep">
+  <span id="ai-capacity"></span>
   <div class="container">
-    <div class="eyebrow reveal" data-i="works_eyebrow">Where AI Works</div>
-    <h2 class="reveal narrative" style="--d:.08s" data-i="works_h2">Where AI can create execution capacity.</h2>
-    <div class="tabs" id="tabs"></div>
-    <div id="dept-panel"></div>
-    <p class="works-note reveal" data-i="works_note">Not every workflow can or should be automated. Humans keep owning judgment, relationships and final decisions.</p>
+    <div class="eyebrow reveal" data-i="ca_eyebrow">Managed AI Capacity</div>
+    <h2 class="reveal" style="--d:.08s" data-i="ca_h2">Rent execution capacity, not software.</h2>
+    <p class="lede reveal" style="--d:.14s" data-i="ca_body">AI agents connected to your company systems, governed by business rules and approval requirements, monitored by Ascenda, and continuously improved as your organization evolves.</p>
+    <div class="arch" id="arch"></div>
+    <p class="punch reveal" style="margin-top:48px" data-i="ca_quote" data-html>You don't hire the AI team. <span class="q">You rent the capacity.</span></p>
+    <div class="cap-note reveal" style="--d:.08s" data-i="ca_note">Commercial model: a recurring monthly fee for Managed AI Capacity — not SaaS.</div>
   </div>
 </section>
 
-<!-- 11 · AUTONOMY -->
-<section id="autonomy">
+<!-- 08 · GOVERNANCE -->
+<section id="governance">
   <div class="container">
-    <div class="eyebrow reveal" data-i="aut_eyebrow">Governance</div>
-    <h2 class="reveal" style="--d:.08s" data-i="aut_h2">Autonomy is earned, not assumed.</h2>
-    <div class="ladder" id="ladder"></div>
-    <p class="lede aut-close reveal" data-i="aut_close">Not every task should become autonomous. Ascenda designs the appropriate combination of AI execution, human judgment, approvals and controls for every workflow.</p>
-    <div class="miniflow reveal">
-      <div class="mf-title" data-i="mf_title">A controlled workflow, end to end</div>
-      <div class="mf-row">
-        <span class="mf" data-i="mf1">Customer request</span><span class="mf-a">→</span>
-        <span class="mf" data-i="mf2">AI understands the request</span><span class="mf-a">→</span>
-        <span class="mf" data-i="mf3">AI checks company systems</span><span class="mf-a">→</span>
-        <span class="mf" data-i="mf4">AI prepares the action</span><span class="mf-a">→</span>
-        <span class="mf hl" data-i="mf5">Approval required?</span>
-      </div>
-      <div class="mf-branch">
-        <div class="mf-row"><span class="mf-yn" data-i="mf_yes">YES</span><span class="mf-a">→</span><span class="mf hl" data-i="mf6">Human approval</span><span class="mf-a">→</span><span class="mf" data-i="mf7">AI executes</span></div>
-        <div class="mf-row"><span class="mf-yn" data-i="mf_no">NO</span><span class="mf-a">→</span><span class="mf" data-i="mf7b">AI executes</span></div>
-      </div>
-      <div class="mf-row" style="margin-top:12px">
-        <span class="mf" data-i="mf8">System updated</span><span class="mf-a">→</span>
-        <span class="mf" data-i="mf9">Audit log + KPI</span>
-      </div>
-    </div>
+    <div class="eyebrow reveal" data-i="go_eyebrow">Governance</div>
+    <h2 class="reveal narrative" style="--d:.08s" data-i="go_h2">AI does the work. Humans retain control.</h2>
+    <div class="gov" id="gov"></div>
+    <p class="gov-close reveal" data-i="go_close" data-html>Automation does not eliminate governance. <span class="q">It makes governance explicit.</span></p>
+    <p class="tagline-big reveal" style="--d:.08s;margin-top:56px" data-i="go_big" data-html>Autonomy is <em>earned</em>, not assumed.</p>
   </div>
 </section>
 
-<!-- 12 · OUTCOMES -->
-<section class="deep">
+<!-- 09 · PROOF -->
+<section id="proof" class="deep">
   <div class="container">
-    <div class="eyebrow reveal" data-i="out_eyebrow">Business Outcomes</div>
-    <h2 class="reveal" style="--d:.08s" data-i="out_h2">The company we're building.</h2>
-    <div class="outcomes-list" id="outcomes-list"></div>
-    <p class="tagline-big reveal" data-i="tagline" data-html>Scale <em>execution</em>, not headcount.</p>
+    <div class="eyebrow reveal" data-i="po_eyebrow">Who's Behind Ascenda</div>
+    <h2 class="reveal" style="--d:.08s" data-i="po_h2">Built by operators, not AI tourists.</h2>
+    <p class="lede reveal" style="--d:.14s" data-i="po_body">Ascenda is built on real experience designing, building and running companies — not on AI hype.</p>
+    <div class="chips" id="chips"></div>
   </div>
 </section>
 
-<!-- 13 · ABOUT -->
-<section id="about">
+<!-- CASE-STUDY FRAMEWORK (hidden until SHOW_CASES=true) -->
+<section id="cases">
   <div class="container">
-    <div class="eyebrow reveal" data-i="about_eyebrow">Why Ascenda Exists</div>
-    <h2 class="reveal narrative" style="--d:.08s" data-i="about_h2">Companies are being redesigned.</h2>
-    <p class="lede reveal" style="--d:.14s" data-i="about_body">For decades, increasing execution required increasing human capacity. AI changes that relationship. Ascenda exists to help owners design the next version of their companies deliberately — rather than letting AI adoption happen randomly across the organization.</p>
-    <div class="pos-trio" id="pos-trio"></div>
-    <p class="mission reveal" data-i="about_mission">Help owner-led companies design and execute the best AI strategy for the next five years.</p>
+    <div class="eyebrow reveal" data-i="cs_eyebrow">Case Studies</div>
+    <h2 class="reveal" style="--d:.08s" data-i="cs_h2">What changes when the operating model changes.</h2>
+    <div class="fy-flow" id="cases-flow"></div>
   </div>
 </section>
 
-<!-- 14 · CONTACT -->
+<!-- 10 · WHY ASCENDA -->
+<section id="why">
+  <div class="container">
+    <div class="eyebrow reveal" data-i="wh_eyebrow">Why Ascenda</div>
+    <h2 class="reveal" style="--d:.08s" data-i="wh_h2">A different starting question.</h2>
+    <div class="cmp" id="cmp"></div>
+    <div class="quote reveal" style="margin-top:52px"><p data-i="wh_quote" data-html>Strategy without execution is a PowerPoint. Execution without strategy is a collection of automations. <strong>Ascenda does both.</strong></p></div>
+    <p class="tagline-big reveal" style="--d:.08s;margin-top:56px" data-i="wh_big" data-html>Design it. <em>Build it.</em> Operate it.</p>
+  </div>
+</section>
+
+<!-- 11 · FIT -->
+<section id="fit" class="deep">
+  <div class="container">
+    <div class="eyebrow reveal" data-i="fi_eyebrow">Fit</div>
+    <h2 class="reveal" style="--d:.08s" data-i="fi_h2">Who Ascenda works best with.</h2>
+    <p class="lede reveal" style="--d:.14s" data-i="fi_body">Ascenda works with owner-led private companies that have reached a level of complexity where adding more people is no longer the best answer to every operational problem. You'll recognize the fit if:</p>
+    <div class="outcomes-list" id="fit-list" style="margin-top:44px"></div>
+    <div class="qualify reveal"><p data-i="fi_qualify">Ascenda is designed for established companies pursuing an operating-model transformation — not isolated chatbot or one-off automation projects.</p></div>
+  </div>
+</section>
+
+<!-- CLOSING TAGLINE -->
+<section id="closing">
+  <div class="container" style="text-align:center">
+    <p class="tagline-big reveal" data-i="cl_big" data-html>Scale <em>execution</em>, not headcount.</p>
+  </div>
+</section>
+
+<!-- 12 · CTA + FORM -->
 <section id="contact" class="deep">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-left">
-        <div class="eyebrow reveal" data-i="ct_eyebrow">Start Here</div>
-        <h2 class="reveal" style="--d:.08s" data-i="ct_h2">What should people, software and AI do inside your company?</h2>
-        <p class="sub reveal" style="--d:.14s" data-i="ct_sub">Let's design the answer.</p>
-        <p class="lede reveal" style="--d:.2s" data-i="ct_body">One conversation. No demo, no pitch deck — a working session about how your company executes today and what it will need over the next five years.</p>
+  <div class="container contact-grid">
+    <div class="contact-left">
+      <div class="eyebrow reveal" data-i="ct_eyebrow">Start Here</div>
+      <h2 class="reveal" style="--d:.08s" data-i="ct_h2">What should people, software and AI do inside your company?</h2>
+      <p class="sub reveal" style="--d:.14s" data-i="ct_accent">Let's design the answer.</p>
+      <p class="lede reveal" style="--d:.2s" data-i="ct_body">One conversation. No demo, no pitch deck — a working session about how your company executes today and what it will need over the next five years.</p>
+    </div>
+    <div class="form-card reveal" style="--d:.14s" id="form-card">
+      <div class="f-body">
+        <p class="f-lede" data-i="fm_lede">Let's understand how your company executes today.</p>
+        <form id="lead-form" novalidate>
+          <div class="f-row">
+            <div class="field"><label for="f-name" data-i="fm_name">Name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+            <div class="field"><label for="f-company" data-i="fm_company">Company</label><input id="f-company" name="company" type="text" required autocomplete="organization"></div>
+          </div>
+          <div class="f-row">
+            <div class="field"><label for="f-email" data-i="fm_email">Work Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field"><label for="f-web" data-i="fm_web">Company Website</label><input id="f-web" name="website" type="text" autocomplete="url"></div>
+          </div>
+          <div class="f-row">
+            <div class="field"><label for="f-role" data-i="fm_role">Role</label><select id="f-role" name="role"></select></div>
+            <div class="field"><label for="f-size" data-i="fm_size">Approximate Employees</label><select id="f-size" name="employees"></select></div>
+          </div>
+          <div class="field"><label for="f-change" data-i="fm_change">What are you trying to change?</label><textarea id="f-change" name="change" rows="3" required></textarea></div>
+          <div class="field"><label for="f-bottleneck" data-i="fm_bottleneck">Where do you see the biggest operational bottleneck? (optional)</label><textarea id="f-bottleneck" name="bottleneck" rows="3"></textarea></div>
+          <input type="text" name="_gotcha" id="f-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:0;height:0;opacity:0">
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i="fm_submit" data-html>Start a Strategy Conversation <span class="arr">→</span></button>
+          <p class="form-msg" id="form-msg"></p>
+        </form>
       </div>
-      <form class="form-card reveal" id="lead-form" novalidate>
-        <p class="f-lede" data-i="f_lede">Let's understand how your company executes today.</p>
-        <div class="f-row">
-          <div class="field"><label for="f-first" data-i="f_first">First Name</label><input id="f-first" name="firstName" autocomplete="given-name" required></div>
-          <div class="field"><label for="f-last" data-i="f_last">Last Name</label><input id="f-last" name="lastName" autocomplete="family-name" required></div>
-        </div>
-        <div class="f-row">
-          <div class="field"><label for="f-email" data-i="f_email">Work Email</label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
-          <div class="field"><label for="f-phone" data-i="f_phone">Phone Number</label><input id="f-phone" type="tel" name="phone" autocomplete="tel"></div>
-        </div>
-        <div class="f-row">
-          <div class="field"><label for="f-company" data-i="f_company">Company</label><input id="f-company" name="company" autocomplete="organization" required></div>
-          <div class="field"><label for="f-web" data-i="f_web">Company Website</label><input id="f-web" name="website" inputmode="url"></div>
-        </div>
-        <div class="f-row">
-          <div class="field"><label for="f-role" data-i="f_role">Role</label><select id="f-role" name="role"></select></div>
-          <div class="field"><label for="f-size" data-i="f_size">Approximate Employee Count</label><select id="f-size" name="employees"></select></div>
-        </div>
-        <div class="field"><label for="f-challenge" data-i="f_challenge">What is your biggest execution challenge today?</label><textarea id="f-challenge" name="challenge" required></textarea></div>
-        <div class="field"><label for="f-value" data-i="f_value">Where do you believe AI could create the most value? (optional)</label><textarea id="f-value" name="aiValue"></textarea></div>
-        <button type="submit" class="btn btn-primary" data-i="f_submit">Start the Conversation <span class="arr">→</span></button>
-        <p class="form-msg" id="form-msg" data-i="f_msg">Thank you — your email client will open with everything pre-filled. Just press send.</p>
-      </form>
+      <div class="thanks" id="thanks">
+        <h3 data-i="tk_h">Thank you.</h3>
+        <p data-i="tk_p">We'll review your company and the challenge you described and follow up shortly.</p>
+        <a href="#" id="book-btn" class="btn btn-ghost" target="_blank" rel="noopener" style="display:none" data-i="tk_book">Book a Strategy Conversation</a>
+      </div>
     </div>
   </div>
 </section>
@@ -718,480 +659,581 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;background:var(--bg-
   <div class="container">
     <div class="foot-inner">
       <div>
-        <div class="foot-brand">
-          <img src="data:image/png;base64,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" alt="" width="26" height="26">
-          <span>Ascenda</span>
-        </div>
-        <p class="foot-tag" data-i="foot_tag">AI strategy + execution for owner-led private companies. Design the operating model. Build the capacity. Run the transformation.</p>
+        <div class="foot-brand"><img src="data:image/png;base64,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" alt="" width="26" height="26"><span>Ascenda</span></div>
+        <p class="foot-tag" data-i="ft_tag">AI strategy + execution for owner-led private companies. Design the operating model. Build the capacity. Run the transformation.</p>
       </div>
       <div class="foot-links">
-        <a href="#strategy" data-i="nav_strategy">Strategy</a>
-        <a href="#ai-capacity" data-i="nav_capacity">AI Capacity</a>
-        <a href="#where-ai-works" data-i="nav_works">Where AI Works</a>
-        <a href="#about" data-i="nav_about">About</a>
-        <a href="#contact" data-i="nav_contact">Contact</a>
+        <a href="#model" data-i="nav_model">The Model</a>
+        <a href="#capacity" data-i="nav_capacity">AI Capacity</a>
+        <a href="#governance" data-i="nav_gov">Governance</a>
+        <a href="#why" data-i="nav_why">Why Ascenda</a>
+        <a href="#contact" data-i="ft_contact">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 Ascenda · ascenda.ai</span>
-      <span data-i="foot_line">Scale execution, not headcount.</span>
+      <span>Scale execution, not headcount.</span>
     </div>
   </div>
 </footer>
 
-<button class="dot-toggle" id="dot-toggle" aria-label="Alternate accent color" title="⌁"></button>
+</body>
 
 <script>
 window.DEFAULT_LANG = "en";
 /* ============ CONFIG ============ */
-var FORM_ENDPOINT = "";                    /* set a Tally/Formspree endpoint here to POST instead of mailto */
-var FORM_EMAIL   = "hello@ascenda.ai";     /* fallback mailto destination */
+var FORM_ENDPOINT = "https://formspree.io/f/mzepalvk"; /* Formspree endpoint receiving the lead POST */
+var BOOKING_URL  = "https://calendly.com/miguelgdelarosa/ascenda-ai"; /* booking link shown after a successful submission */
+var GA4_ID       = "G-1SJG69K191"; /* GA4 measurement ID — activates the analytics event layer */
+var SHOW_CASES   = false; /* keep false until real case studies are supplied */
 
-/* ============ I18N ============ */
+/* ============ i18n STRINGS ============ */
 var STR = {
 en:{
-  nav_strategy:"Strategy", nav_capacity:"AI Capacity", nav_works:"Where AI Works", nav_about:"About", nav_contact:"Contact",
-  nav_cta:"Build Your AI Strategy",
+  title:"Ascenda — AI Strategy + Execution for Owner-Led Companies",
+  nav_model:"The Model", nav_capacity:"AI Capacity", nav_gov:"Governance", nav_why:"Why Ascenda",
+  nav_cta:"Design Your AI Operating Model",
   hero_eyebrow:"AI Strategy + Execution for Owner-Led Companies",
   hero_h1:"Design the company you'll need for the next five years.",
   hero_q:"Every owner is going to have to answer the same question over the next five years: what should my <em>people</em> do, what should <em>software</em> do, and what should <em>AI</em> do?",
   hero_a:"Ascenda helps owner-led companies answer that question, design the operating model, and then actually build and operate the AI capacity required to execute it.",
-  hero_cta1:"Build Your AI Strategy <span class='arr'>→</span>", hero_cta2:"See How Ascenda Works",
+  hero_cta1:"Design Your AI Operating Model <span class=\"arr\">→</span>",
+  hero_cta2:"See How Ascenda Works",
   fl1:"Strategy", fl2:"Implementation", fl3:"Managed AI Capacity",
-  shift_eyebrow:"The Operating-Model Shift",
-  shift_h2:"Most companies were designed for a world where execution required people.",
-  shift_l1:"To grow, you hired.", shift_l2:"To execute more, you added headcount.",
-  shift_l3:"To know what was happening, you asked people.", shift_l4:"To preserve knowledge, you hoped your best employees stayed.",
-  shift_punch:"That operating model <span class='q'>is changing.</span>",
-  shift_body:"AI introduces a new source of execution capacity. The opportunity isn't simply to automate tasks. <strong>It's to redesign the company.</strong>",
-  pains_eyebrow:"Five Symptoms, One Problem",
-  pains_h2:"Human dependency limits execution.",
-  pains_close:"The goal isn't fewer people. <span class='q'>It's greater capacity per person.</span>",
-  model_eyebrow:"A New Organizational Design Question",
-  model_h2:"People. Software. AI.",
-  model_body:"Companies used to have two major ways of getting work done: people and software. Now they have a third. That creates a fundamental organizational design question.",
-  model_close:"<span class='q'>What should each one do?</span> That's the operating-model question Ascenda helps answer.",
-  strat_eyebrow:"Ascenda 5-Year AI Operating Strategy",
-  strat_h2:"Design before you automate.",
-  strat_body:"We work with the owner and leadership team to design how the company should operate over the next five years — and create the roadmap to get there.",
-  deliv_eyebrow:"Strategic Deliverables",
-  deliv_h2:"A strategy you can actually execute.",
-  method_eyebrow:"The Ascenda Method",
-  method_h2:"From strategy to execution.",
-  method_quote:"Strategy without execution is a PowerPoint. Execution without strategy is a collection of automations. <strong>Ascenda does both.</strong>",
-  bridge_h2:"The roadmap doesn't end with a recommendation.",
-  bridge_body:"We don't hand you a strategy and leave. Ascenda builds the AI capacity required to execute it.",
-  bridge_caption:"From AI strategy <b>→</b> to AI capacity.",
-  cap_eyebrow:"Ascenda Execution",
-  cap_h2:"Rent execution capacity, not software.",
-  cap_body:"Ascenda builds, deploys and operates AI agents that execute defined areas of work inside your business. You don't need to build an AI engineering team, maintain infrastructure, manage prompts, monitor every workflow, continuously retrain the solution or manage multiple AI vendors.",
-  cap_manages:"Ascenda Manages",
-  cap_note:"Commercial model: a recurring monthly fee for Managed AI Capacity — not SaaS.",
-  works_eyebrow:"Where AI Works",
-  works_h2:"Where AI can create execution capacity.",
-  works_note:"Not every workflow can or should be automated. Humans keep owning judgment, relationships and final decisions.",
-  aut_eyebrow:"Governance",
-  aut_h2:"Autonomy is earned, not assumed.",
-  aut_close:"Not every task should become autonomous. Ascenda designs the appropriate combination of AI execution, human judgment, approvals and controls for every workflow.",
-  mf_title:"A controlled workflow, end to end",
-  mf1:"Customer request", mf2:"AI understands the request", mf3:"AI checks company systems", mf4:"AI prepares the action",
-  mf5:"Approval required?", mf_yes:"YES", mf_no:"NO", mf6:"Human approval", mf7:"AI executes", mf7b:"AI executes",
-  mf8:"System updated", mf9:"Audit log + KPI",
-  out_eyebrow:"Business Outcomes",
-  out_h2:"The company we're building.",
-  tagline:"Scale <em>execution</em>, not headcount.",
-  about_eyebrow:"Why Ascenda Exists",
-  about_h2:"Companies are being redesigned.",
-  about_body:"For decades, increasing execution required increasing human capacity. AI changes that relationship. Ascenda exists to help owners design the next version of their companies deliberately — rather than letting AI adoption happen randomly across the organization.",
-  about_mission:"Help owner-led companies design and execute the best AI strategy for the next five years.",
+  band_h2:"Built for companies where growth has outgrown the operating model.",
+  band_p:"Owner-led private companies where adding more people is no longer the best answer to every operational problem.",
+  pr_eyebrow:"The Problem",
+  pr_h2:"Your company may be growing. But execution is becoming harder.",
+  pr_close1:"These look like different problems. They are not. They are symptoms of the same operating model: execution still depends too heavily on human capacity.",
+  pr_close2:"<span class=\"q\">Human dependency limits execution.</span>",
+  sh_eyebrow:"The Shift",
+  sh_h2:"Work can now be divided between people, software and AI.",
+  sh_body:"Companies used to have two major ways of getting work done: people and software. Now they have a third. That creates a fundamental organizational design question.",
+  sh_close:"<span class=\"q\">What should each one do?</span> That's the operating-model question Ascenda helps answer.",
+  wa_eyebrow:"What Ascenda Does",
+  wa_h2:"Design before you automate.",
+  wa_big:"Ascenda helps leadership decide how work should be divided between people, traditional software, and AI; designs the future operating model around that answer; <strong>and then builds and operates the AI capacity required to execute it.</strong>",
+  wa_pos:"Ascenda sits <b>between strategy and execution</b> — not an AI agency, not a software company, not a traditional consultancy.",
+  mo_eyebrow:"The Ascenda Model",
+  mo_h2:"Strategy. Implementation. Managed AI Capacity.",
+  mo_sub:"A progression, not three separate services.",
+  fy_eyebrow:"The Five-Year Operating Model",
+  fy_h2:"From today's company to the company you'll need.",
+  fy_close:"Increase organizational capacity without requiring headcount to grow at the same rate as complexity.",
+  fy_note:"The goal isn't fewer people. It's greater capacity per person.",
+  ca_eyebrow:"Managed AI Capacity",
+  ca_h2:"Rent execution capacity, not software.",
+  ca_body:"AI agents connected to your company systems, governed by business rules and approval requirements, monitored by Ascenda, and continuously improved as your organization evolves.",
+  ca_quote:"You don't hire the AI team. <span class=\"q\">You rent the capacity.</span>",
+  ca_note:"Commercial model: a recurring monthly fee for Managed AI Capacity — not SaaS.",
+  go_eyebrow:"Governance",
+  go_h2:"AI does the work. Humans retain control.",
+  go_close:"Automation does not eliminate governance. <span class=\"q\">It makes governance explicit.</span>",
+  go_big:"Autonomy is <em>earned</em>, not assumed.",
+  po_eyebrow:"Who's Behind Ascenda",
+  po_h2:"Built by operators, not AI tourists.",
+  po_body:"Ascenda is built on real experience designing organizations, building companies, leading teams, and implementing technology in real operating environments — not on AI hype.",
+  cs_eyebrow:"Case Studies",
+  cs_h2:"What changes when the operating model changes.",
+  wh_eyebrow:"Why Ascenda",
+  wh_h2:"A different starting question.",
+  wh_quote:"Strategy without execution is a PowerPoint. Execution without strategy is a collection of automations. <strong>Ascenda does both.</strong>",
+  wh_big:"Design it. <em>Build it.</em> Operate it.",
+  fi_eyebrow:"Fit",
+  fi_h2:"Who Ascenda works best with.",
+  fi_body:"Ascenda works with owner-led private companies that have reached a level of complexity where adding more people is no longer the best answer to every operational problem. You'll recognize the fit if:",
+  fi_qualify:"Ascenda is designed for established companies pursuing an operating-model transformation — not isolated chatbot or one-off automation projects.",
+  cl_big:"Scale <em>execution</em>, not headcount.",
   ct_eyebrow:"Start Here",
   ct_h2:"What should people, software and AI do inside your company?",
-  ct_sub:"Let's design the answer.",
+  ct_accent:"Let's design the answer.",
   ct_body:"One conversation. No demo, no pitch deck — a working session about how your company executes today and what it will need over the next five years.",
-  f_lede:"Let's understand how your company executes today.",
-  f_first:"First Name", f_last:"Last Name", f_email:"Work Email", f_phone:"Phone Number",
-  f_company:"Company", f_web:"Company Website", f_role:"Role", f_size:"Approximate Employee Count",
-  f_challenge:"What is your biggest execution challenge today?",
-  f_value:"Where do you believe AI could create the most value? (optional)",
-  f_submit:"Start the Conversation <span class='arr'>→</span>",
-  f_msg:"Thank you — your email client will open with everything pre-filled. Just press send.",
-  f_msg_sent:"Thank you — we'll get back to you shortly.",
-  foot_tag:"AI strategy + execution for owner-led private companies. Design the operating model. Build the capacity. Run the transformation.",
-  foot_line:"Scale execution, not headcount."
+  fm_lede:"Let's understand how your company executes today.",
+  fm_name:"Name", fm_company:"Company", fm_email:"Work Email", fm_web:"Company Website",
+  fm_role:"Role", fm_size:"Approximate Employees",
+  fm_role_ph:"Select role", fm_size_ph:"Select company size",
+  fm_change:"What are you trying to change?",
+  fm_bottleneck:"Where do you see the biggest operational bottleneck? (optional)",
+  fm_submit:"Start a Strategy Conversation <span class=\"arr\">→</span>",
+  fm_sending:"Submitting…",
+  fm_error:"Please complete the required fields.",
+  fm_server_error:"Something went wrong. Please try again or email us at hello@ascenda.ai.",
+  tk_h:"Thank you.",
+  tk_p:"We'll review your company and the challenge you described and follow up shortly.",
+  tk_book:"Book a Strategy Conversation",
+  ft_tag:"AI strategy + execution for owner-led private companies. Design the operating model. Build the capacity. Run the transformation.",
+  ft_contact:"Contact"
 },
 es:{
-  nav_strategy:"Estrategia", nav_capacity:"Capacidad de AI", nav_works:"Dónde trabaja la AI", nav_about:"Nosotros", nav_contact:"Contacto",
-  nav_cta:"Diseña tu estrategia de AI",
-  hero_eyebrow:"Estrategia + Ejecución de AI para Empresas Lideradas por sus Dueños",
-  hero_h1:"Diseña la empresa que necesitarás para los próximos cinco años.",
-  hero_q:"Todo dueño tendrá que responder la misma pregunta durante los próximos cinco años: ¿qué debe hacer mi <em>gente</em>, qué debe hacer el <em>software</em> y qué debe hacer la <em>AI</em>?",
-  hero_a:"Ascenda ayuda a empresas lideradas por sus dueños a responder esa pregunta, diseñar su modelo operativo y después construir y operar la capacidad de AI necesaria para ejecutarlo.",
-  hero_cta1:"Diseña tu estrategia de AI <span class='arr'>→</span>", hero_cta2:"Conoce cómo funciona Ascenda",
-  fl1:"Estrategia", fl2:"Implementación", fl3:"Capacidad de AI gestionada",
-  shift_eyebrow:"El Cambio de Modelo Operativo",
-  shift_h2:"La mayoría de las empresas fueron diseñadas para un mundo donde ejecutar requería personas.",
-  shift_l1:"Para crecer, contratabas.", shift_l2:"Para ejecutar más, aumentabas la nómina.",
-  shift_l3:"Para saber qué estaba pasando, preguntabas.", shift_l4:"Para conservar conocimiento, esperabas que tus mejores empleados se quedaran.",
-  shift_punch:"Ese modelo operativo <span class='q'>está cambiando.</span>",
-  shift_body:"AI introduce una nueva fuente de capacidad de ejecución. La oportunidad no consiste simplemente en automatizar tareas. <strong>Consiste en rediseñar la empresa.</strong>",
-  pains_eyebrow:"Cinco Síntomas, Un Mismo Problema",
-  pains_h2:"La dependencia humana limita la capacidad de ejecución.",
-  pains_close:"El objetivo no es tener menos personas. <span class='q'>Es crear mayor capacidad por persona.</span>",
-  model_eyebrow:"Una Nueva Pregunta de Diseño Organizacional",
-  model_h2:"Personas. Software. AI.",
-  model_body:"Las empresas tenían dos grandes formas de ejecutar el trabajo: personas y software. Ahora existe una tercera. Eso crea una pregunta fundamental de diseño organizacional.",
-  model_close:"<span class='q'>¿Qué debería hacer cada uno?</span> Esa es la pregunta de diseño operativo que Ascenda ayuda a responder.",
-  strat_eyebrow:"Ascenda 5-Year AI Operating Strategy",
-  strat_h2:"Design before you automate.",
-  strat_body:"Trabajamos con el dueño y su equipo directivo para diseñar cómo debe operar la empresa durante los próximos cinco años — y creamos el roadmap para llegar ahí.",
-  deliv_eyebrow:"Entregables Estratégicos",
-  deliv_h2:"Una estrategia que realmente puedes ejecutar.",
-  method_eyebrow:"El Método Ascenda",
-  method_h2:"De la estrategia a la ejecución.",
-  method_quote:"Estrategia sin ejecución es un PowerPoint. Ejecución sin estrategia es una colección de automatizaciones. <strong>Ascenda hace ambas.</strong>",
-  bridge_h2:"El roadmap no termina en una recomendación.",
-  bridge_body:"No te entregamos una estrategia y desaparecemos. Ascenda construye la capacidad de AI necesaria para ejecutarla.",
-  bridge_caption:"De estrategia de AI <b>→</b> a capacidad real de ejecución.",
-  cap_eyebrow:"Ejecución Ascenda",
-  cap_h2:"Rent execution capacity, not software.",
-  cap_body:"Ascenda construye, despliega y opera agentes de AI que ejecutan áreas definidas de trabajo dentro de tu negocio. No necesitas construir un equipo de ingeniería de AI, mantener infraestructura, administrar prompts, monitorear cada workflow, reentrenar la solución continuamente ni coordinar múltiples proveedores de AI.",
-  cap_manages:"Ascenda se encarga de",
-  cap_note:"Modelo comercial: una mensualidad recurrente por Managed AI Capacity — no es SaaS.",
-  works_eyebrow:"Dónde Trabaja la AI",
-  works_h2:"Dónde AI puede crear capacidad de ejecución.",
-  works_note:"No todos los procesos pueden o deben automatizarse. Las personas conservan el criterio, las relaciones y las decisiones finales.",
-  aut_eyebrow:"Gobernanza",
-  aut_h2:"La autonomía se gana, no se asume.",
-  aut_close:"No todas las tareas deben convertirse en autónomas. Ascenda diseña la combinación adecuada de ejecución con AI, criterio humano, aprobaciones y controles para cada proceso.",
-  mf_title:"Un workflow controlado, de inicio a fin",
-  mf1:"Solicitud del cliente", mf2:"La AI entiende la solicitud", mf3:"La AI consulta los sistemas", mf4:"La AI prepara la acción",
-  mf5:"¿Requiere aprobación?", mf_yes:"SÍ", mf_no:"NO", mf6:"Aprobación humana", mf7:"La AI ejecuta", mf7b:"La AI ejecuta",
-  mf8:"Sistema actualizado", mf9:"Audit log + KPI",
-  out_eyebrow:"Resultados de Negocio",
-  out_h2:"La empresa que estamos construyendo.",
-  tagline:"Scale <em>execution</em>, not headcount.",
-  about_eyebrow:"Por Qué Existe Ascenda",
-  about_h2:"Las empresas están siendo rediseñadas.",
-  about_body:"Durante décadas, aumentar la ejecución exigía aumentar la capacidad humana. AI cambia esa relación. Ascenda existe para ayudar a los dueños a diseñar la siguiente versión de su empresa de forma deliberada — en lugar de permitir que la adopción de AI ocurra de manera aleatoria en la organización.",
-  about_mission:"Ayudar a empresas lideradas por sus dueños a diseñar y ejecutar la mejor estrategia de AI para los próximos cinco años.",
+  title:"Ascenda — Estrategia + Ejecución de IA para Empresas Lideradas por sus Dueños",
+  nav_model:"El Modelo", nav_capacity:"Capacidad de IA", nav_gov:"Gobernanza", nav_why:"Por qué Ascenda",
+  nav_cta:"Diseña tu Modelo Operativo de IA",
+  hero_eyebrow:"Estrategia + Ejecución de IA para Empresas Lideradas por sus Dueños",
+  hero_h1:"Diseña la empresa que vas a necesitar durante los próximos cinco años.",
+  hero_q:"Todo dueño va a tener que responder la misma pregunta durante los próximos cinco años: ¿qué debería hacer mi <em>equipo</em>, qué debería hacer el <em>software</em> y qué debería hacer la <em>inteligencia artificial</em>?",
+  hero_a:"Ascenda ayuda a empresas lideradas por sus dueños a responder esa pregunta, diseñar el modelo operativo y después construir y operar la capacidad de IA necesaria para ejecutarlo.",
+  hero_cta1:"Diseña tu Modelo Operativo de IA <span class=\"arr\">→</span>",
+  hero_cta2:"Conoce cómo funciona Ascenda",
+  fl1:"Estrategia", fl2:"Implementación", fl3:"Capacidad de IA Gestionada",
+  band_h2:"Para empresas donde el crecimiento ya rebasó al modelo operativo.",
+  band_p:"Empresas privadas lideradas por sus dueños donde contratar más personas ya no es la mejor respuesta a cada problema operativo.",
+  pr_eyebrow:"El Problema",
+  pr_h2:"Tu empresa puede estar creciendo. Pero ejecutar es cada vez más difícil.",
+  pr_close1:"Parecen problemas distintos. No lo son. Son síntomas del mismo modelo operativo: la ejecución todavía depende demasiado de la capacidad humana.",
+  pr_close2:"<span class=\"q\">La dependencia humana limita la capacidad de ejecución.</span>",
+  sh_eyebrow:"El Cambio",
+  sh_h2:"El trabajo ahora puede dividirse entre personas, software e IA.",
+  sh_body:"Antes, las empresas tenían dos grandes formas de ejecutar el trabajo: personas y software. Hoy existe una tercera. Eso crea una pregunta fundamental de diseño organizacional.",
+  sh_close:"<span class=\"q\">¿Qué debería hacer cada uno?</span> Esa es la pregunta de modelo operativo que Ascenda ayuda a responder.",
+  wa_eyebrow:"Qué Hace Ascenda",
+  wa_h2:"Diseña antes de automatizar.",
+  wa_big:"Ascenda ayuda al liderazgo a decidir cómo dividir el trabajo entre personas, software tradicional e IA; diseña el modelo operativo futuro alrededor de esa respuesta; <strong>y después construye y opera la capacidad de IA necesaria para ejecutarlo.</strong>",
+  wa_pos:"Ascenda opera <b>entre la estrategia y la ejecución</b>: no es una agencia de IA, no es una empresa de software y no es una consultoría tradicional.",
+  mo_eyebrow:"El Modelo Ascenda",
+  mo_h2:"Estrategia. Implementación. Capacidad de IA Gestionada.",
+  mo_sub:"Una progresión, no tres servicios separados.",
+  fy_eyebrow:"El Modelo Operativo a Cinco Años",
+  fy_h2:"De la empresa de hoy a la empresa que vas a necesitar.",
+  fy_close:"Aumenta la capacidad organizacional sin que el headcount tenga que crecer al mismo ritmo que la complejidad.",
+  fy_note:"El objetivo no es tener menos personas. Es generar más capacidad por persona.",
+  ca_eyebrow:"Capacidad de IA Gestionada",
+  ca_h2:"Renta capacidad de ejecución, no software.",
+  ca_body:"Agentes de IA conectados a los sistemas de tu empresa, gobernados por reglas de negocio y requerimientos de aprobación, monitoreados por Ascenda y mejorados continuamente conforme tu organización evoluciona.",
+  ca_quote:"No contratas al equipo de IA. <span class=\"q\">Rentas la capacidad.</span>",
+  ca_note:"Modelo comercial: una mensualidad recurrente por Capacidad de IA Gestionada — no SaaS.",
+  go_eyebrow:"Gobernanza",
+  go_h2:"La IA hace el trabajo. Las personas mantienen el control.",
+  go_close:"La automatización no elimina la gobernanza. <span class=\"q\">La hace explícita.</span>",
+  go_big:"La autonomía se <em>gana</em>, no se asume.",
+  po_eyebrow:"Quién Está Detrás de Ascenda",
+  po_h2:"Construida por operadores, no por turistas de la IA.",
+  po_body:"Ascenda nace de experiencia real diseñando organizaciones, construyendo empresas, liderando equipos e implementando tecnología en entornos operativos reales — no del hype de la IA.",
+  cs_eyebrow:"Casos",
+  cs_h2:"Qué cambia cuando cambia el modelo operativo.",
+  wh_eyebrow:"Por Qué Ascenda",
+  wh_h2:"Una pregunta de partida diferente.",
+  wh_quote:"La estrategia sin ejecución es un PowerPoint. La ejecución sin estrategia es una colección de automatizaciones. <strong>Ascenda hace ambas.</strong>",
+  wh_big:"Diseñarlo. <em>Construirlo.</em> Operarlo.",
+  fi_eyebrow:"Fit",
+  fi_h2:"Con quién funciona mejor Ascenda.",
+  fi_body:"Ascenda trabaja con empresas privadas lideradas por sus dueños que llegaron a un nivel de complejidad donde contratar más personas ya no es la mejor respuesta a cada problema operativo. Hay fit si:",
+  fi_qualify:"Ascenda está diseñada para empresas establecidas que buscan transformar su modelo operativo — no para proyectos aislados de chatbots o automatizaciones puntuales.",
+  cl_big:"Escala la <em>ejecución</em>, no el headcount.",
   ct_eyebrow:"Empieza Aquí",
-  ct_h2:"¿Qué deberían hacer las personas, el software y la AI dentro de tu empresa?",
-  ct_sub:"Diseñemos la respuesta.",
-  ct_body:"Una conversación. Sin demo, sin pitch deck — una sesión de trabajo sobre cómo ejecuta tu empresa hoy y qué necesitará durante los próximos cinco años.",
-  f_lede:"Entendamos cómo ejecuta tu empresa hoy.",
-  f_first:"Nombre", f_last:"Apellido", f_email:"Email de trabajo", f_phone:"Teléfono",
-  f_company:"Empresa", f_web:"Sitio web de la empresa", f_role:"Rol", f_size:"Número aproximado de empleados",
-  f_challenge:"¿Cuál es tu mayor reto de ejecución hoy?",
-  f_value:"¿Dónde crees que la AI podría crear mayor valor? (opcional)",
-  f_submit:"Iniciar la conversación <span class='arr'>→</span>",
-  f_msg:"Gracias — tu cliente de correo se abrirá con todo pre-llenado. Solo presiona enviar.",
-  f_msg_sent:"Gracias — te contactaremos en breve.",
-  foot_tag:"Estrategia + ejecución de AI para empresas privadas lideradas por sus dueños. Diseña el modelo operativo. Construye la capacidad. Opera la transformación.",
-  foot_line:"Scale execution, not headcount."
+  ct_h2:"¿Qué deberían hacer las personas, el software y la IA dentro de tu empresa?",
+  ct_accent:"Diseñemos la respuesta.",
+  ct_body:"Una conversación. Sin demo, sin pitch deck: una sesión de trabajo sobre cómo ejecuta tu empresa hoy y qué va a necesitar durante los próximos cinco años.",
+  fm_lede:"Entendamos cómo ejecuta tu empresa hoy.",
+  fm_name:"Nombre", fm_company:"Empresa", fm_email:"Email de trabajo", fm_web:"Sitio web de la empresa",
+  fm_role:"Rol", fm_size:"Número aproximado de empleados",
+  fm_role_ph:"Selecciona un rol", fm_size_ph:"Selecciona el tamaño de la empresa",
+  fm_change:"¿Qué estás tratando de cambiar?",
+  fm_bottleneck:"¿Dónde ves el mayor cuello de botella operativo? (opcional)",
+  fm_submit:"Inicia una Conversación Estratégica <span class=\"arr\">→</span>",
+  fm_sending:"Enviando…",
+  fm_error:"Completa los campos requeridos, por favor.",
+  fm_server_error:"Algo salió mal. Inténtalo de nuevo o escríbenos a hello@ascenda.ai.",
+  tk_h:"Gracias.",
+  tk_p:"Revisaremos tu empresa y el reto que describiste y te contactaremos en breve.",
+  tk_book:"Agenda una Conversación Estratégica",
+  ft_tag:"Estrategia + ejecución de IA para empresas privadas lideradas por sus dueños. Diseña el modelo operativo. Construye la capacidad. Ejecuta la transformación.",
+  ft_contact:"Contacto"
 }};
 
+/* ============ DATA ============ */
 var DATA = {
-pains:{
-en:[
- ["01","Bottlenecks","Work stops waiting for someone."],
- ["02","Knowledge trapped in people","Your company knows less than your people do."],
- ["03","Inconsistent execution","Different people. Different outcomes."],
- ["04","Growth requires headcount","More revenue shouldn't require proportionally more people."],
- ["05","Limited visibility","Owners shouldn't have to chase work to know what's happening."]],
-es:[
- ["01","Cuellos de botella","El trabajo se detiene esperando a alguien."],
- ["02","Conocimiento atrapado en personas","Tu empresa sabe menos que las personas que trabajan en ella."],
- ["03","Ejecución inconsistente","Personas diferentes. Resultados diferentes."],
- ["04","Crecer exige nómina","Más ingresos no deberían requerir proporcionalmente más personas."],
- ["05","Visibilidad limitada","El dueño no debería perseguir el trabajo para saber qué está pasando."]]},
-trio:{
-en:[
- ["People","Judgment, relationships and leadership stay human.",["Judgment","Relationships","Negotiation","Leadership","Creativity","Context"]],
- ["Software","Systems of record and deterministic process.",["Systems of record","Structured workflows","Transactions","Business rules","Databases","Deterministic processes"]],
- ["AI","A new source of execution capacity.",["Execution","Reasoning","Monitoring","Coordination","Research","Follow-up","Interpretation"]]],
-es:[
- ["Personas","El criterio, las relaciones y el liderazgo siguen siendo humanos.",["Criterio","Relaciones","Negociación","Liderazgo","Creatividad","Contexto"]],
- ["Software","Sistemas de registro y procesos determinísticos.",["Sistemas de registro","Workflows estructurados","Transacciones","Reglas de negocio","Bases de datos","Procesos determinísticos"]],
- ["AI","Una nueva fuente de capacidad de ejecución.",["Ejecución","Razonamiento","Monitoreo","Coordinación","Investigación","Seguimiento","Interpretación"]]]},
-stages:{
-en:[
- ["Today","How does work actually get done?"],
- ["Future State","What should people, software and AI each own?"],
- ["Roadmap","What should change first, what comes later and where will the greatest economic value be created?"]],
-es:[
- ["Hoy","¿Cómo se ejecuta realmente el trabajo?"],
- ["Modelo Futuro","¿Qué deberían hacer las personas, el software y la AI?"],
- ["Roadmap","¿Qué debe cambiar primero, qué debe venir después y dónde se encuentra el mayor valor económico?"]]},
-deliv:{
-en:[
- ["Executive AI Strategy","5-year AI thesis and strategic direction."],
- ["Execution & Bottleneck Map","Where work, decisions and approvals become constrained."],
- ["Key-Person Dependency Map","Where knowledge and execution depend on specific individuals."],
- ["AI Opportunity Portfolio","Prioritized opportunities across the company."],
- ["Future-State Operating Model","How the company should operate in the future."],
- ["Human / Software / AI Architecture","Clear ownership of work between humans, systems and agents."],
- ["Economic Business Case","Expected impact on capacity, cost, growth, productivity and margin."],
- ["Five-Year Transformation Roadmap","Sequence and timing of transformation initiatives."],
- ["90-Day Execution Plan","Immediate implementation priorities."],
- ["Governance Framework","Controls, permissions, approvals, monitoring and accountability."]],
-es:[
- ["Estrategia Ejecutiva de AI","Tesis de AI y dirección estratégica a cinco años."],
- ["Mapa de Ejecución y Cuellos de Botella","Dónde se frenan el trabajo, las decisiones y las aprobaciones."],
- ["Mapa de Dependencia de Personas Clave","Dónde el conocimiento y la ejecución dependen de individuos específicos."],
- ["Portafolio de Oportunidades de AI","Oportunidades priorizadas en toda la empresa."],
- ["Modelo Operativo Futuro","Cómo debe operar la empresa en el futuro."],
- ["Arquitectura Personas / Software / AI","Propiedad clara del trabajo entre personas, sistemas y agentes."],
- ["Caso de Negocio Económico","Impacto esperado en capacidad, costo, crecimiento, productividad y margen."],
- ["Roadmap de Transformación a Cinco Años","Secuencia y tiempos de las iniciativas de transformación."],
- ["Plan de Ejecución de 90 Días","Prioridades inmediatas de implementación."],
- ["Marco de Gobernanza","Controles, permisos, aprobaciones, monitoreo y accountability."]]},
-method:{
-en:[
- ["01","Diagnose","Understand how execution works today.","Where is work getting stuck?"],
- ["02","Design","Build the future operating model.","What should people, software and AI each do?"],
- ["03","Prioritize","Create the economic roadmap.","What creates the greatest value first?"],
- ["04","Execute","Build and operate the AI capacity.","How do we turn strategy into execution?"]],
-es:[
- ["01","Diagnosticar","Entender cómo se ejecuta el trabajo hoy.","¿Dónde se atora el trabajo?"],
- ["02","Diseñar","Construir el modelo operativo futuro.","¿Qué deben hacer las personas, el software y la AI?"],
- ["03","Priorizar","Crear el roadmap económico.","¿Qué crea el mayor valor primero?"],
- ["04","Ejecutar","Construir y operar la capacidad de AI.","¿Cómo convertimos la estrategia en ejecución?"]]},
-bigflow:{
-en:["Strategy","Build","Deploy","Operate","Improve"],
-es:["Estrategia","Construir","Desplegar","Operar","Mejorar"]},
-manage:{
-en:["Build","Integration","Deployment","Monitoring","Quality assurance","Exception handling","Continuous improvement","Governance"],
-es:["Construcción","Integración","Despliegue","Monitoreo","Control de calidad","Manejo de excepciones","Mejora continua","Gobernanza"]},
-depts:{
-en:[
- ["Finance",["Collections","Invoice follow-up","Accounts receivable workflows","Accounts payable workflows","Reconciliation","Reporting","Variance monitoring","Documentation","Financial data preparation","Exception identification"]],
- ["Sales",["Lead research","Account research","CRM execution","Lead qualification","Follow-up","Proposal preparation","Quoting","Pipeline monitoring","Sales reporting","Meeting preparation"]],
- ["Customer Operations",["Inbox management","Support triage","Customer follow-up","Order status","Issue routing","Retention workflows","FAQs","Escalation management","Communication preparation"]],
- ["Operations",["Procurement support","Supplier follow-up","Inventory monitoring","Order processing","Vendor coordination","Data processing","Exception detection","Documentation","Workflow coordination"]],
- ["People / HR",["Recruiting coordination","Candidate screening support","Interview scheduling","Onboarding","Employee documentation","Internal knowledge","Employee support","Policy questions"]],
- ["Management",["Executive reporting","KPI monitoring","Meeting follow-up","Exception alerts","Business reviews","Information synthesis","Decision support","Action-item monitoring"]]],
-es:[
- ["Finanzas",["Cobranza","Seguimiento de facturas","Cuentas por cobrar","Cuentas por pagar","Conciliaciones","Reportes","Monitoreo de variaciones","Documentación","Preparación de información financiera","Identificación de excepciones"]],
- ["Ventas",["Investigación de leads","Investigación de cuentas","Ejecución en CRM","Calificación de leads","Seguimiento","Preparación de propuestas","Cotizaciones","Monitoreo de pipeline","Reportes de ventas","Preparación de reuniones"]],
- ["Atención al Cliente",["Gestión de inbox","Triage de soporte","Seguimiento a clientes","Estatus de pedidos","Ruteo de casos","Workflows de retención","Preguntas frecuentes","Gestión de escalaciones","Preparación de comunicaciones"]],
- ["Operaciones",["Apoyo a compras","Seguimiento a proveedores","Monitoreo de inventario","Procesamiento de pedidos","Coordinación con proveedores","Procesamiento de datos","Detección de excepciones","Documentación","Coordinación de workflows"]],
- ["Personas / RH",["Coordinación de reclutamiento","Apoyo en filtrado de candidatos","Agenda de entrevistas","Onboarding","Documentación de empleados","Conocimiento interno","Soporte a empleados","Consultas de políticas"]],
- ["Dirección",["Reportes ejecutivos","Monitoreo de KPIs","Seguimiento de reuniones","Alertas de excepciones","Business reviews","Síntesis de información","Apoyo a decisiones","Monitoreo de acuerdos"]]]},
-ladder:{
-en:[
- ["Level 1","Recommend","AI recommends. Human decides and executes.","Strategic decisions · sensitive pricing · major exceptions","28%"],
- ["Level 2","Prepare","AI prepares. Human approves.","Quotes · outbound emails · payment decisions","52%"],
- ["Level 3","Execute","AI executes. Human reviews exceptions.","Routine follow-ups · standard reporting · reconciliations","76%"],
- ["Level 4","Autonomous","AI operates within predefined controls. Humans monitor performance and exceptions.","Low-risk repetitive tasks · monitoring · classification","100%"]],
-es:[
- ["Nivel 1","Recomendar","La AI recomienda. La persona decide y ejecuta.","Decisiones estratégicas · precios sensibles · excepciones mayores","28%"],
- ["Nivel 2","Preparar","La AI prepara. La persona aprueba.","Cotizaciones · correos salientes · decisiones de pago","52%"],
- ["Nivel 3","Ejecutar","La AI ejecuta. La persona revisa excepciones.","Seguimientos rutinarios · reportes estándar · conciliaciones","76%"],
- ["Nivel 4","Autónomo","La AI opera dentro de controles predefinidos. Las personas monitorean desempeño y excepciones.","Tareas repetitivas de bajo riesgo · monitoreo · clasificación","100%"]]},
-outcomes:{
-en:["Less dependent on the owner.","Less dependent on key employees.","More consistent execution.","Greater visibility and control.","Faster execution.","Execution capacity that grows faster than headcount."],
-es:["Menos dependiente del dueño.","Menos dependiente de empleados clave.","Ejecución más consistente.","Mayor visibilidad y control.","Ejecución más rápida.","Capacidad de ejecución que crece más rápido que la nómina."]},
-pos:{
-en:[
- ["Strategic enough","To sit with the owner and leadership team and redesign the operating model."],
- ["Technical enough","To actually build the AI infrastructure and agents."],
- ["Operational enough","To run that capacity on an ongoing basis."]],
-es:[
- ["Suficientemente estratégica","Para sentarse con el dueño y su equipo directivo a rediseñar el modelo operativo."],
- ["Suficientemente técnica","Para construir realmente la infraestructura y los agentes de AI."],
- ["Suficientemente operativa","Para operar esa capacidad de forma continua."]]},
-roles:{
-en:["Founder","Owner","CEO","President","COO","CFO","Other Executive"],
-es:["Fundador(a)","Dueño(a)","CEO","Presidente(a)","COO","CFO","Otro ejecutivo"]},
-sizes:{
-en:["Under 10","10–49","50–99","100–249","250–499","500–999","1,000+"],
-es:["Menos de 10","10–49","50–99","100–249","250–499","500–999","1,000+"]}
+problems:[
+ {en:["Growth still means adding people.","Revenue increases, complexity increases, and headcount follows."],
+  es:["Crecer todavía significa contratar más personas.","Los ingresos aumentan, la complejidad aumenta y el headcount también."]},
+ {en:["Critical processes depend on specific employees.","When someone is unavailable, execution slows down or stops."],
+  es:["Los procesos críticos dependen de personas específicas.","Cuando alguien no está disponible, la ejecución se frena o se detiene."]},
+ {en:["Managers spend their days chasing information.","Updates, approvals, follow-ups, status meetings and coordination consume management capacity."],
+  es:["Los managers pasan el día persiguiendo información.","Updates, aprobaciones, seguimientos, juntas de estatus y coordinación consumen capacidad directiva."]},
+ {en:["Knowledge is fragmented.","Important information lives across systems, spreadsheets, inboxes, and people's heads."],
+  es:["El conocimiento está fragmentado.","La información importante vive entre sistemas, hojas de cálculo, correos y la cabeza de las personas."]},
+ {en:["Leadership cannot see execution without asking someone.","Getting a reliable answer often requires meetings, messages, or manual reporting."],
+  es:["La dirección no puede ver la ejecución sin preguntarle a alguien.","Obtener una respuesta confiable suele requerir juntas, mensajes o reportes manuales."]},
+ {en:["AI exists inside the company without an operating strategy.","Teams experiment with ChatGPT, copilots, and automations, but there is no clear answer to what AI should actually own."],
+  es:["La IA ya existe dentro de la empresa, pero sin una estrategia operativa.","Los equipos experimentan con ChatGPT, copilots y automatizaciones, pero no existe una respuesta clara sobre qué trabajo debería asumir realmente la IA."]}
+],
+trio:[
+ {tag:{en:"People",es:"Personas"}, sub:{en:"Judgment, relationships and leadership stay human.",es:"El juicio, las relaciones y el liderazgo siguen siendo humanos."},
+  items:{en:["Judgment","Relationships","Negotiation","Leadership","Creativity","Context"],es:["Juicio","Relaciones","Negociación","Liderazgo","Creatividad","Contexto"]}},
+ {tag:{en:"Software",es:"Software"}, sub:{en:"Systems of record and deterministic process.",es:"Sistemas de registro y procesos determinísticos."},
+  items:{en:["Systems of record","Structured workflows","Transactions","Business rules","Databases","Deterministic processes"],es:["Sistemas de registro","Workflows estructurados","Transacciones","Reglas de negocio","Bases de datos","Procesos determinísticos"]}},
+ {tag:{en:"AI",es:"IA"}, sub:{en:"A new source of execution capacity.",es:"Una nueva fuente de capacidad de ejecución."},
+  items:{en:["Execution","Reasoning","Monitoring","Coordination","Research","Follow-up","Interpretation"],es:["Ejecución","Razonamiento","Monitoreo","Coordinación","Investigación","Seguimiento","Interpretación"]}}
+],
+model:[
+ {num:"01", h:{en:"Strategy",es:"Estrategia"},
+  body:{en:"We design the future operating model with the owner and leadership team.",es:"Diseñamos el modelo operativo futuro con el dueño y su equipo directivo."},
+  items:{en:["What humans should own","What traditional software should own","What AI should own","Where decision rights should live","Which processes should change","Which capabilities to build over the next 3–5 years"],
+         es:["Qué debe ser de las personas","Qué debe ser del software tradicional","Qué debe ser de la IA","Dónde deben vivir los derechos de decisión","Qué procesos deben cambiar","Qué capacidades construir en los próximos 3–5 años"]},
+  out:{en:"Output: <b>AI Operating Strategy + Transformation Roadmap</b>",es:"Entregable: <b>Estrategia Operativa de IA + Roadmap de Transformación</b>"}},
+ {num:"02", h:{en:"Implementation",es:"Implementación"},
+  body:{en:"We redesign workflows and build the infrastructure required to execute the strategy — implementation exists to support the future operating model, not automation for its own sake.",
+        es:"Rediseñamos workflows y construimos la infraestructura necesaria para ejecutar la estrategia. La implementación existe para soportar el modelo operativo futuro, no para automatizar por automatizar."},
+  items:{en:["Workflow redesign","System integration","Data access","Process automation","AI agents","Human approval mechanisms","Management visibility","Operating dashboards"],
+         es:["Rediseño de workflows","Integración de sistemas","Acceso a datos","Automatización de procesos","Agentes de IA","Mecanismos de aprobación humana","Visibilidad directiva","Dashboards operativos"]},
+  out:null},
+ {num:"03", h:{en:"Managed AI Capacity",es:"Capacidad de IA Gestionada"},
+  body:{en:"The recurring product. Ascenda builds AI capacity around your operating model and operates it for you on an ongoing basis.",
+        es:"El producto recurrente. Ascenda construye capacidad de IA alrededor de tu modelo operativo y la opera por ti de forma continua."},
+  items:{en:["Build","Integration","Deployment","Monitoring","Quality assurance","Exception handling","Continuous improvement","Governance"],
+         es:["Construcción","Integración","Despliegue","Monitoreo","Aseguramiento de calidad","Manejo de excepciones","Mejora continua","Gobernanza"]},
+  out:{en:"<b>Rent execution capacity, not software.</b>",es:"<b>Renta capacidad de ejecución, no software.</b>"}}
+],
+fy:[
+ {tag:{en:"Today",es:"Hoy"}, hl:false,
+  items:{en:["People-heavy execution","Fragmented software","Manual coordination","AI experiments"],
+         es:["Ejecución intensiva en personas","Software fragmentado","Coordinación manual","Experimentos de IA"]}},
+ {tag:{en:"Ascenda",es:"Ascenda"}, hl:true,
+  line:{en:"Operating-model redesign",es:"Rediseño del modelo operativo"}},
+ {tag:{en:"Future company",es:"Empresa futura"}, hl:false,
+  items:{en:["Smaller coordination burden","More automated execution","AI capacity","Clear human decision rights","Scalable operating infrastructure"],
+         es:["Menor carga de coordinación","Ejecución más automatizada","Capacidad de IA","Derechos de decisión claros","Infraestructura operativa escalable"]}}
+],
+arch:[
+ {tag:{en:"Company systems",es:"Sistemas de la empresa"}, hl:false,
+  items:{en:["CRM","ERP","Email","Accounting","Operations","Data"],es:["CRM","ERP","Email","Contabilidad","Operaciones","Datos"]}},
+ {tag:{en:"Ascenda AI capacity",es:"Capacidad de IA Ascenda"}, hl:true,
+  items:{en:["Agents","Workflows","Memory","Decision logic","Integrations"],es:["Agentes","Workflows","Memoria","Lógica de decisión","Integraciones"]}},
+ {tag:{en:"Human governance",es:"Gobernanza humana"}, hl:false,
+  items:{en:["Approve","Escalate","Review","Override"],es:["Aprobar","Escalar","Revisar","Intervenir"]}},
+ {tag:{en:"Business outcomes",es:"Resultados de negocio"}, hl:false,
+  items:{en:["Faster execution","Lower coordination cost","Greater visibility","Less dependency on headcount"],es:["Ejecución más rápida","Menor costo de coordinación","Mayor visibilidad","Menos dependencia del headcount"]}}
+],
+gov:[
+ {tag:{en:"Auto-execute",es:"Autoejecución"},
+  use:{en:"Low-risk, repetitive tasks",es:"Tareas repetitivas de bajo riesgo"},
+  ex:{en:"Collect information · Update systems · Generate reports · Follow up · Route documents",
+      es:"Recopilar información · Actualizar sistemas · Generar reportes · Dar seguimiento · Enrutar documentos"}},
+ {tag:{en:"Human approval",es:"Aprobación humana"},
+  use:{en:"Actions requiring judgment or authorization",es:"Acciones que requieren juicio o autorización"},
+  ex:{en:"Pricing changes · Customer commitments · Payments · Contract actions · Hiring decisions",
+      es:"Cambios de precios · Compromisos con clientes · Pagos · Acciones contractuales · Decisiones de contratación"}},
+ {tag:{en:"Human-only",es:"Solo humanos"},
+  use:{en:"High-impact strategic decisions",es:"Decisiones estratégicas de alto impacto"},
+  ex:{en:"Strategy · Leadership decisions · Major capital allocation · Sensitive personnel decisions",
+      es:"Estrategia · Decisiones de liderazgo · Asignación mayor de capital · Decisiones sensibles de personal"}}
+],
+chips:{en:["Organizational strategy","Operating-model design","Transformation","Entrepreneurship","Building and managing companies","Technology implementation","AI systems","Data","Organizational development"],
+       es:["Estrategia organizacional","Diseño de modelos operativos","Transformación","Emprendimiento","Construcción y gestión de empresas","Implementación de tecnología","Sistemas de IA","Datos","Desarrollo organizacional"]},
+cmp:[
+ {m:{en:"Traditional AI agency",es:"Agencia de IA tradicional"}, q:{en:"“What can we automate?”",es:"“¿Qué podemos automatizar?”"}, hl:false},
+ {m:{en:"Traditional consultant",es:"Consultor tradicional"}, q:{en:"“What strategy should you pursue?”",es:"“¿Qué estrategia deberías seguir?”"}, hl:false},
+ {m:{en:"Ascenda",es:"Ascenda"}, q:{en:"“How should your company operate over the next five years?”",es:"“¿Cómo debería operar tu empresa durante los próximos cinco años?”"}, hl:true}
+],
+fit:{en:["The owner is still involved in too many operational decisions.","Growth continuously requires additional headcount.","Managers spend significant time coordinating work instead of leading.","Critical processes depend on specific employees.","Important knowledge lives inside spreadsheets, inboxes, Slack, WhatsApp, or people's heads.","Departments operate with disconnected tools and workflows.","Leadership has experimented with AI but does not have a company-wide AI operating strategy.","The company wants to scale without creating a proportionally larger organization."],
+     es:["El dueño sigue metido en demasiadas decisiones operativas.","Crecer sigue requiriendo headcount adicional.","Los managers dedican más tiempo a coordinar que a liderar.","Los procesos críticos dependen de empleados específicos.","El conocimiento importante vive en hojas de cálculo, correos, Slack, WhatsApp o en la cabeza de las personas.","Los departamentos operan con herramientas y workflows desconectados.","La dirección ha experimentado con IA pero no tiene una estrategia de IA a nivel empresa.","La empresa quiere escalar sin crear una organización proporcionalmente más grande."]},
+cases:[
+ {tag:{en:"Before",es:"Antes"}, items:{en:["The operational problem","Where execution depended on people","What leadership could not see"],es:["El problema operativo","Dónde la ejecución dependía de personas","Qué no podía ver la dirección"]}},
+ {tag:{en:"Redesign",es:"Rediseño"}, hl:true, line:{en:"How work was redistributed between people, software and AI",es:"Cómo se redistribuyó el trabajo entre personas, software e IA"}},
+ {tag:{en:"After",es:"Después"}, items:{en:["Hours saved","Cycle time reduced","Management visibility improved","Errors reduced"],es:["Horas ahorradas","Tiempos de ciclo reducidos","Visibilidad directiva mejorada","Errores reducidos"]}}
+],
+roles:{en:["Founder","Owner","CEO","President","COO","CFO","Other Executive"],
+       es:["Fundador","Dueño","CEO","Presidente","COO","CFO","Otro directivo"]},
+sizes:["10–49","50–99","100–249","250–499","500+"]
 };
 
+/* ============ ATTRIBUTION (UTM / referrer / first landing) ============ */
+function readStore(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function writeStore(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+(function(){
+  try{
+    var p = new URLSearchParams(location.search), utm = {}, has = false;
+    ["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].forEach(function(k){
+      var v = p.get(k); if(v){ utm[k] = v; has = true; }
+    });
+    if(has) writeStore("ascenda-utm", JSON.stringify(utm));
+    if(!readStore("ascenda-first-url")) writeStore("ascenda-first-url", location.href);
+    if(!readStore("ascenda-first-ref") && document.referrer) writeStore("ascenda-first-ref", document.referrer);
+  }catch(e){}
+})();
+function getUTM(){ try{ return JSON.parse(readStore("ascenda-utm") || "{}"); }catch(e){ return {}; } }
+
+/* ============ ANALYTICS (GA4, exact event names) ============ */
+function loadAnalytics(){
+  if(!GA4_ID) return;
+  var s = document.createElement("script");
+  s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA4_ID, { send_page_view:false });
+}
+function track(name, params){
+  if(window.gtag) gtag("event", name, params || {});
+}
+function base(){ return { page: location.pathname, language: LANG }; }
+
 /* ============ RENDER ============ */
-var lang = (typeof window.DEFAULT_LANG !== "undefined") ? window.DEFAULT_LANG : "en";
-try{
-  var qs = new URLSearchParams(location.search).get("lang");
-  if(qs === "en" || qs === "es") lang = qs;
-  else { var saved = localStorage.getItem("ascenda_lang"); if(saved === "en" || saved === "es") lang = saved; }
-}catch(e){}
-
-function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
-
-function renderDynamic(){
-  var L = lang;
-  var pg = document.getElementById("pain-grid");
-  pg.innerHTML = DATA.pains[L].map(function(p,i){
-    return "<div class='pain reveal' style='--d:"+(i*0.07)+"s'><div class='num'>"+p[0]+"</div><h3>"+esc(p[1])+"</h3><p>"+esc(p[2])+"</p></div>";
-  }).join("");
-  document.getElementById("trio").innerHTML = DATA.trio[L].map(function(c,i){
-    return "<div class='trio-col reveal' style='--d:"+(i*0.1)+"s'><div class='t-label'>"+esc(c[0])+"</div><div class='t-sub'>"+esc(c[1])+"</div><ul>"+
-      c[2].map(function(x){return "<li>"+esc(x)+"</li>"}).join("")+"</ul></div>";
-  }).join("");
-  document.getElementById("stage-grid").innerHTML = DATA.stages[L].map(function(s,i){
-    return "<div class='stage reveal' style='--d:"+(i*0.09)+"s'><div class='s-tag'>"+esc(s[0])+"</div><p>"+esc(s[1])+"</p></div>";
-  }).join("");
-  var dnum=["01","02","03","04","05","06","07","08","09","10"];
-  document.getElementById("deliv-grid").innerHTML = DATA.deliv[L].map(function(d,i){
-    return "<div class='deliv reveal' style='--d:"+((i%2)*0.06)+"s'><span class='d-num'>"+dnum[i]+"</span><div><h3>"+esc(d[0])+"</h3><p>"+esc(d[1])+"</p></div></div>";
-  }).join("");
-  document.getElementById("method-grid").innerHTML = DATA.method[L].map(function(m){
-    return "<div class='mstep'><div class='m-num'>"+m[0]+"</div><h3>"+esc(m[1])+"</h3><div class='m-line'>"+esc(m[2])+"</div><p>"+esc(m[3])+"</p></div>";
-  }).join("");
-  var bf = DATA.bigflow[L], bh = "";
-  for(var i=0;i<bf.length;i++){
-    bh += "<div class='bf'>"+esc(bf[i])+"</div>";
-    if(i<bf.length-1) bh += "<div class='bf-a'></div>";
-  }
-  document.getElementById("bigflow").innerHTML = bh;
-  document.getElementById("manage-grid").innerHTML = DATA.manage[L].map(function(m,i){
-    return "<div class='mg reveal' style='--d:"+(i*0.05)+"s'>"+esc(m)+"</div>";
-  }).join("");
-  renderTabs(0);
-  document.getElementById("ladder").innerHTML = DATA.ladder[L].map(function(l){
-    return "<div class='lvl' style='--w:"+l[4]+"'><div class='l-tag'>"+esc(l[0])+"</div><div><h3>"+esc(l[1])+"</h3><div class='l-line'>"+esc(l[2])+"</div><div class='l-ex'>"+esc(l[3])+"</div></div><div class='l-bar'><i></i></div></div>";
-  }).join("");
-  document.getElementById("outcomes-list").innerHTML = DATA.outcomes[L].map(function(o,i){
-    return "<div class='reveal' style='--d:"+(i*0.06)+"s'>"+esc(o)+"</div>";
-  }).join("");
-  document.getElementById("pos-trio").innerHTML = DATA.pos[L].map(function(p,i){
-    return "<div class='pos reveal' style='--d:"+(i*0.09)+"s'><h3>"+esc(p[0])+"</h3><p>"+esc(p[1])+"</p></div>";
-  }).join("");
-  fillSelect("f-role", DATA.roles[L]);
-  fillSelect("f-size", DATA.sizes[L]);
-  observeAll();
-}
-
-var activeTab = 0;
-function renderTabs(idx){
-  activeTab = idx;
-  var L = lang;
-  document.getElementById("tabs").innerHTML = DATA.depts[L].map(function(d,i){
-    return "<button class='tab"+(i===idx?" on":"")+"' onclick='renderTabs("+i+")'>"+esc(d[0])+"</button>";
-  }).join("");
-  var d = DATA.depts[L][idx];
-  document.getElementById("dept-panel").innerHTML =
-    "<div class='dept'><div class='eyebrow' style='margin-bottom:14px'>"+esc(d[0])+"</div><div class='dept-items'>"+
-    d[1].map(function(x){return "<span>"+esc(x)+"</span>"}).join("")+"</div></div>";
-}
-
-function fillSelect(id, opts){
-  var sel = document.getElementById(id);
-  var v = sel.value;
-  sel.innerHTML = opts.map(function(o){return "<option>"+esc(o)+"</option>"}).join("");
-  if(v) for(var i=0;i<sel.options.length;i++){ if(sel.options[i].text===v) sel.selectedIndex=i; }
-}
-
-function applyStrings(){
+var LANG = "en";
+function el(id){return document.getElementById(id)}
+function fillText(lang){
   var d = STR[lang];
-  document.querySelectorAll("[data-i]").forEach(function(el){
-    var k = el.getAttribute("data-i");
+  document.querySelectorAll("[data-i]").forEach(function(n){
+    var k = n.getAttribute("data-i");
     if(!(k in d)) return;
-    if(el.hasAttribute("data-html") || /</.test(d[k])) el.innerHTML = d[k];
-    else el.textContent = d[k];
+    if(n.hasAttribute("data-html")) n.innerHTML = d[k]; else n.textContent = d[k];
   });
+  document.title = d.title;
   document.documentElement.lang = lang;
-  ["lang-en","m-lang-en"].forEach(function(id){var b=document.getElementById(id); if(b) b.classList.toggle("on", lang==="en")});
-  ["lang-es","m-lang-es"].forEach(function(id){var b=document.getElementById(id); if(b) b.classList.toggle("on", lang==="es")});
-  document.title = lang==="es"
-    ? "Ascenda — Estrategia + Ejecución de AI para Empresas Lideradas por sus Dueños"
-    : "Ascenda — AI Strategy + Execution for Owner-Led Companies";
+}
+function fillProblems(lang){
+  el("pain-grid").innerHTML = DATA.problems.map(function(p,i){
+    return '<div class="pain reveal in"><div class="num">0'+(i+1)+'</div><h3>'+p[lang][0]+'</h3><p>'+p[lang][1]+'</p></div>';
+  }).join("");
+}
+function fillTrio(lang){
+  el("trio").innerHTML = DATA.trio.map(function(t){
+    return '<div class="trio-col reveal in"><div class="t-label">'+t.tag[lang]+'</div><div class="t-sub">'+t.sub[lang]+'</div><ul>'+
+      t.items[lang].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul></div>';
+  }).join("");
+}
+function fillModel(lang){
+  var h = [];
+  DATA.model.forEach(function(m,i){
+    h.push('<div class="model-card seq">'+
+      '<div class="mc-num">'+m.num+'</div><h3>'+m.h[lang]+'</h3>'+
+      '<p class="mc-body">'+m.body[lang]+'</p>'+
+      '<ul>'+m.items[lang].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>'+
+      (m.out ? '<p class="'+(i===2?'mc-quote':'mc-out')+'">'+m.out[lang]+'</p>' : '')+
+      '</div>');
+    if(i<2) h.push('<div class="model-arrow seq">→</div>');
+  });
+  el("model-flow").innerHTML = h.join("");
+}
+function colBlock(c,lang){
+  var inner = c.line ? '<p>'+c.line[lang]+'</p>' : '<ul>'+c.items[lang].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>';
+  var img = c.hl ? '<img src="'+document.querySelector(".mark img").src+'" alt="">' : '';
+  return '<div class="fy-col seq'+(c.hl?' hl':'')+'">'+img+'<div class="fy-tag">'+c.tag[lang]+'</div>'+inner+'</div>';
+}
+function fillFY(lang){
+  var h=[];
+  DATA.fy.forEach(function(c,i){ h.push(colBlock(c,lang)); if(i<DATA.fy.length-1) h.push('<div class="fy-arrow seq">→</div>'); });
+  el("fy-flow").innerHTML = h.join("");
+}
+function fillCases(lang){
+  var h=[];
+  DATA.cases.forEach(function(c,i){ h.push(colBlock(c,lang)); if(i<DATA.cases.length-1) h.push('<div class="fy-arrow seq">→</div>'); });
+  el("cases-flow").innerHTML = h.join("");
+}
+function fillArch(lang){
+  var h=[];
+  DATA.arch.forEach(function(c,i){
+    h.push('<div class="arch-col seq'+(c.hl?' hl':'')+'"><div class="a-tag">'+c.tag[lang]+'</div><div class="a-items">'+
+      c.items[lang].map(function(x){return '<span>'+x+'</span>'}).join("")+'</div></div>');
+    if(i<DATA.arch.length-1) h.push('<div class="arch-a seq">→</div>');
+  });
+  el("arch").innerHTML = h.join("");
+}
+function fillGov(lang){
+  el("gov").innerHTML = DATA.gov.map(function(g){
+    return '<div class="gov-row seq"><span class="g-tag">'+g.tag[lang]+'</span><p class="g-use">'+g.use[lang]+'</p><p class="g-ex">'+g.ex[lang]+'</p></div>';
+  }).join("");
+}
+function fillChips(lang){
+  el("chips").innerHTML = DATA.chips[lang].map(function(c){return '<span class="chip reveal in">'+c+'</span>'}).join("");
+}
+function fillCmp(lang){
+  el("cmp").innerHTML = DATA.cmp.map(function(r){
+    return '<div class="cmp-row reveal in'+(r.hl?' hl':'')+'"><span class="c-model">'+r.m[lang]+'</span><span class="c-q">'+r.q[lang]+'</span></div>';
+  }).join("");
+}
+function fillFit(lang){
+  el("fit-list").innerHTML = DATA.fit[lang].map(function(x){return '<div class="reveal in">'+x+'</div>'}).join("");
+}
+function fillSelects(lang){
+  el("f-role").innerHTML = '<option value="" disabled selected>'+STR[lang].fm_role_ph+'</option>'+
+    DATA.roles[lang].map(function(r){return '<option>'+r+'</option>'}).join("");
+  el("f-size").innerHTML = '<option value="" disabled selected>'+STR[lang].fm_size_ph+'</option>'+
+    DATA.sizes.map(function(s){return '<option>'+s+'</option>'}).join("");
+}
+function renderAll(lang){
+  fillText(lang); fillProblems(lang); fillTrio(lang); fillModel(lang); fillFY(lang);
+  fillArch(lang); fillGov(lang); fillChips(lang); fillCmp(lang); fillFit(lang);
+  fillSelects(lang); fillCases(lang);
+  seqWatch();
 }
 
-function setLang(l){
-  lang = l;
-  try{ localStorage.setItem("ascenda_lang", l); }catch(e){}
-  applyStrings();
-  renderDynamic();
-  closeMenu();
+/* ============ LANGUAGE (real URLs) ============ */
+function goLang(target){
+  if(target === LANG) return;
+  track("language_switch", { from: LANG, to: target, page: location.pathname });
+  if(location.protocol === "file:"){ /* local preview only */
+    LANG = target; renderAll(target); markLangButtons(); return;
+  }
+  location.href = (target === "es" ? "/es/" : "/") + location.hash;
 }
-
-/* ============ SCROLL FX ============ */
-var io;
-function observeAll(){
-  if(io) io.disconnect();
-  io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting) return;
-      e.target.classList.add("in");
-      io.unobserve(e.target);
-    });
-  },{threshold:.15, rootMargin:"0px 0px -8% 0px"});
-  document.querySelectorAll(".reveal,.oldrules div").forEach(function(el){ io.observe(el); });
-
-  var seq = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting) return;
-      seq.unobserve(e.target);
-      var kids = e.target.querySelectorAll(".mstep,.lvl,.bf,.bf-a");
-      kids.forEach(function(k,i){ setTimeout(function(){ k.classList.add("on"); }, 240*i); });
-    });
-  },{threshold:.25});
-  ["method-grid","ladder","bigflow"].forEach(function(id){
-    var el = document.getElementById(id); if(el) seq.observe(el);
+function markLangButtons(){
+  ["lang-en","lang-es","m-lang-en","m-lang-es"].forEach(function(id){
+    var b = el(id); if(!b) return;
+    b.classList.toggle("on", id.indexOf(LANG) > -1);
   });
 }
 
-/* ============ NAV ============ */
-var nav = document.getElementById("nav");
-addEventListener("scroll", function(){ nav.classList.toggle("scrolled", scrollY > 24); }, {passive:true});
-var burger = document.getElementById("burger");
-function closeMenu(){ document.body.classList.remove("menu-open"); burger.setAttribute("aria-expanded","false"); }
-burger.addEventListener("click", function(){
-  var open = document.body.classList.toggle("menu-open");
-  burger.setAttribute("aria-expanded", open ? "true" : "false");
+/* ============ MOTION ============ */
+var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var revealObs = null;
+function watchReveals(){
+  if(reduced){ document.querySelectorAll(".reveal").forEach(function(n){n.classList.add("in")}); return; }
+  if(!revealObs){
+    revealObs = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); revealObs.unobserve(e.target); } });
+    },{threshold:.14});
+  }
+  document.querySelectorAll(".reveal:not(.in)").forEach(function(n){revealObs.observe(n)});
+}
+var seqObs = null;
+function seqWatch(){
+  var containers = ["model-flow","fy-flow","arch","gov","cases-flow"];
+  if(reduced){ containers.forEach(function(id){var c=el(id); if(c) c.querySelectorAll(".seq").forEach(function(n){n.classList.add("on")});}); return; }
+  if(!seqObs){
+    seqObs = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var items = e.target.querySelectorAll(".seq");
+        items.forEach(function(n,i){ setTimeout(function(){n.classList.add("on")}, i*180); });
+        seqObs.unobserve(e.target);
+      });
+    },{threshold:.2});
+  }
+  containers.forEach(function(id){ var c = el(id); if(c) seqObs.observe(c); });
+  watchReveals();
+}
+
+/* ============ NAV / MENU ============ */
+window.addEventListener("scroll", function(){
+  el("nav").classList.toggle("scrolled", window.scrollY > 24);
 });
-document.querySelectorAll(".mobile-menu a").forEach(function(a){ a.addEventListener("click", closeMenu); });
+el("burger").addEventListener("click", function(){
+  var open = document.body.classList.toggle("menu-open");
+  this.setAttribute("aria-expanded", open ? "true" : "false");
+});
+document.querySelectorAll(".mobile-menu a").forEach(function(a){
+  a.addEventListener("click", function(){ document.body.classList.remove("menu-open"); el("burger").setAttribute("aria-expanded","false"); });
+});
+
+/* ============ ANALYTICS EVENT WIRING ============ */
+el("cta-hero-primary").addEventListener("click", function(){ track("hero_design_operating_model_click", base()); });
+el("cta-hero-secondary").addEventListener("click", function(){ track("hero_see_how_click", base()); });
+document.querySelectorAll('[data-i="nav_cta"]').forEach(function(a){
+  a.addEventListener("click", function(){ track("nav_cta_click", base()); });
+});
+(function(){
+  var seen = false;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting && !seen){ seen = true; track("contact_section_view", base()); io.disconnect(); }
+    });
+  },{threshold:.3});
+  io.observe(el("contact"));
+})();
+(function(){
+  var started = false;
+  el("lead-form").addEventListener("input", function(){
+    if(!started){ started = true; track("lead_form_start", base()); }
+  });
+})();
 
 /* ============ FORM ============ */
-document.getElementById("lead-form").addEventListener("submit", function(ev){
+el("lead-form").addEventListener("submit", function(ev){
   ev.preventDefault();
-  var f = ev.target;
-  if(!f.reportValidity()) return;
-  var get = function(n){ return f.elements[n] ? f.elements[n].value.trim() : ""; };
-  var payload = {
-    firstName:get("firstName"), lastName:get("lastName"), email:get("email"), phone:get("phone"),
-    company:get("company"), website:get("website"), role:get("role"), employees:get("employees"),
-    challenge:get("challenge"), aiValue:get("aiValue"), lang:lang, source:location.href
-  };
-  var msg = document.getElementById("form-msg");
-  if(FORM_ENDPOINT){
-    fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
-      .then(function(){ msg.textContent = STR[lang].f_msg_sent; msg.classList.add("show"); f.reset(); })
-      .catch(function(){ mailtoFallback(payload, msg); });
-  } else {
-    mailtoFallback(payload, msg);
-  }
-});
-function mailtoFallback(p, msg){
-  var subject = (lang==="es" ? "Nueva conversación — " : "New conversation — ") + p.company + " (" + p.firstName + " " + p.lastName + ")";
-  var lines = [
-    "Name: " + p.firstName + " " + p.lastName,
-    "Email: " + p.email, "Phone: " + p.phone,
-    "Company: " + p.company, "Website: " + p.website,
-    "Role: " + p.role, "Employees: " + p.employees, "",
-    "Biggest execution challenge:", p.challenge, "",
-    "Where AI could create the most value:", p.aiValue
-  ];
-  location.href = "mailto:" + FORM_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-  msg.textContent = STR[lang].f_msg;
-  msg.classList.add("show");
-}
+  var msg = el("form-msg");
+  var btn = ev.target.querySelector('button[type=submit]');
+  track("lead_form_submit_attempt", base());
 
-/* ============ ACCENT TOGGLE (hidden) ============ */
-document.getElementById("dot-toggle").addEventListener("click", function(){
-  var r = document.documentElement.style;
-  var cur = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
-  if(cur.toUpperCase() === "#FF6EC7"){
-    r.setProperty("--accent","#E85D2A"); r.setProperty("--accent-soft","rgba(232,93,42,.14)");
-  } else {
-    r.setProperty("--accent","#FF6EC7"); r.setProperty("--accent-soft","rgba(255,110,199,.14)");
+  /* honeypot: silently drop bot submissions */
+  if(el("f-gotcha") && el("f-gotcha").value){ showThanks(); return; }
+
+  var required = ["f-name","f-company","f-email","f-role","f-size","f-change"];
+  var ok = true;
+  required.forEach(function(id){
+    var n = el(id);
+    var bad = !n.value || !String(n.value).trim() || (n.type==="email" && !/^\S+@\S+\.\S+$/.test(n.value));
+    n.style.borderColor = bad ? "var(--accent)" : "";
+    if(bad) ok = false;
+  });
+  if(!ok){
+    msg.textContent = STR[LANG].fm_error; msg.classList.add("show");
+    track("lead_form_error", Object.assign(base(), { error_type:"validation" }));
+    return;
   }
+  msg.classList.remove("show");
+
+  var utm = getUTM();
+  var payload = {
+    _subject: "Nuevo lead Ascenda — " + el("f-company").value.trim(),
+    name: el("f-name").value.trim(),
+    company: el("f-company").value.trim(),
+    email: el("f-email").value.trim(),
+    website: el("f-web").value.trim(),
+    role: el("f-role").value,
+    employees: el("f-size").value,
+    change: el("f-change").value.trim(),
+    bottleneck: el("f-bottleneck").value.trim(),
+    lang: LANG,
+    page: location.href,
+    timestamp: new Date().toISOString(),
+    utm_source: utm.utm_source || "",
+    utm_medium: utm.utm_medium || "",
+    utm_campaign: utm.utm_campaign || "",
+    utm_content: utm.utm_content || "",
+    utm_term: utm.utm_term || "",
+    referrer: readStore("ascenda-first-ref") || document.referrer || "",
+    first_landing_url: readStore("ascenda-first-url") || location.href
+  };
+
+  function showThanks(){
+    var card = el("form-card");
+    card.classList.add("done");
+    if(BOOKING_URL){ var b = el("book-btn"); b.href = BOOKING_URL; b.style.display = "inline-flex"; }
+    try{ card.scrollIntoView({behavior:"smooth",block:"center"}); }catch(e){}
+  }
+  function showServerError(type){
+    msg.textContent = STR[LANG].fm_server_error; msg.classList.add("show");
+    track("lead_form_error", Object.assign(base(), { error_type:type }));
+  }
+  function lock(on){
+    btn.disabled = on;
+    btn.innerHTML = on ? STR[LANG].fm_sending : STR[LANG].fm_submit;
+  }
+
+  if(!FORM_ENDPOINT){ showServerError("server"); return; }
+
+  lock(true);
+  fetch(FORM_ENDPOINT, {
+    method:"POST",
+    headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+    body: JSON.stringify(payload)
+  }).then(function(r){
+    if(r.ok){
+      track("lead_form_success", Object.assign(base(), {
+        company_size: payload.employees, role: payload.role,
+        utm_source: payload.utm_source, utm_medium: payload.utm_medium, utm_campaign: payload.utm_campaign
+      }));
+      showThanks();
+    } else {
+      showServerError("server"); lock(false);
+    }
+  }).catch(function(){
+    showServerError("network"); lock(false);
+  });
 });
+el("book-btn").addEventListener("click", function(){ track("booking_click", base()); });
 
 /* ============ INIT ============ */
-applyStrings();
-renderDynamic();
+(function(){
+  if(SHOW_CASES) el("cases").classList.add("show");
+  LANG = (window.DEFAULT_LANG === "es") ? "es" : "en";
+  renderAll(LANG);
+  markLangButtons();
+  watchReveals();
+  loadAnalytics();
+  track("page_view", base());
+})();
+
 </script>
-</body>
 </html>
