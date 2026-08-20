@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://ascenda.ai/</loc>
+  <url>
+    <loc>https://ascenda.ai/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/"/>
   </url>
-  <url><loc>https://ascenda.ai/es/</loc>
+  <url>
+    <loc>https://ascenda.ai/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/start/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/start/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/start/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/start/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/start/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/start/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/ai-operating-model/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/ai-operating-model/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/ai-operating-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/ai-operating-model/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/ai-operating-model/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/ai-operating-model/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/ai-operating-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/ai-operating-model/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/managed-ai-capacity/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/managed-ai-capacity/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/managed-ai-capacity/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/managed-ai-capacity/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/managed-ai-capacity/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/managed-ai-capacity/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/managed-ai-capacity/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/managed-ai-capacity/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/where-ai-works/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/where-ai-works/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/where-ai-works/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/where-ai-works/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/where-ai-works/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/where-ai-works/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/where-ai-works/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/where-ai-works/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/governance/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/governance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/governance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/governance/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/governance/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/governance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/governance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/governance/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/why-ascenda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/why-ascenda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/why-ascenda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/why-ascenda/"/>
+  </url>
+  <url>
+    <loc>https://ascenda.ai/es/why-ascenda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ascenda.ai/why-ascenda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ascenda.ai/es/why-ascenda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ascenda.ai/why-ascenda/"/>
   </url>
 </urlset>
